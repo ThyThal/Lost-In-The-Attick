@@ -6,11 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Animator _animator;
 
     // Update is called once per frame
     void Update()
@@ -19,9 +15,9 @@ public class MenuController : MonoBehaviour
     }
 
     public void OnClickPlay() { SceneManager.LoadScene("Game"); }
-    public void OnClickCredits() { }
+    public void OnClickCredits() { _animator.SetTrigger("ShowCredits"); }
     public void OnClickHelp() { }
-    public void OnClickBack() { }
+    public void OnClickBack() { _animator.SetTrigger("HideCredits"); }
     public void OnClickExit() {
         #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
