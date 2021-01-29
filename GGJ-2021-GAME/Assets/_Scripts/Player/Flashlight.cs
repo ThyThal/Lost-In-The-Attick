@@ -2,21 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TempLight : MonoBehaviour
+public class Flashlight : MonoBehaviour
 {
-
-    [SerializeField] private float speed;
-    [SerializeField] private GameObject lightSource;
-
-
-
-
-    private void Movement(Vector3 axis)
-    {
-        transform.position += axis * Time.deltaTime * speed;
-    }
-
-    private void LightMove ()
+    public void LightMove ()
     {
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
 
@@ -33,30 +21,5 @@ public class TempLight : MonoBehaviour
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b)
     {
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
-    }
-
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        Vector3 moveAxis = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
-        Movement(moveAxis);
-
-
-        LightMove();
-
-
-
-
     }
 }
