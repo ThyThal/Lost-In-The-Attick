@@ -849,7 +849,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f0eacffd3624d374d86e03d15fa0a8c8, type: 3}
     m_FontSize: 73
     m_FontStyle: 1
     m_BestFit: 0
@@ -861,7 +861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Don Pedrito - FULL STACK DEVELOPER
+  m_Text: Cooming Soon...
 --- !u!222 &1228142022
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1210,10 +1210,10 @@ RectTransform:
   m_Father: {fileID: 1433941277}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 570, y: -373}
-  m_SizeDelta: {x: 530.33575, y: 99.43796}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -200, y: 100}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938618207
 MonoBehaviour:
