@@ -9336,7 +9336,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8933054, y: 1}
+    m_SensorSize: {x: 1.7783784, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11822,25 +11822,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4937370268042022550, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: _flashlight
-      value: 
-      objectReference: {fileID: 1119705391}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 314a6f36ed86bf444a0e878148156e9d, type: 3}
---- !u!114 &1119705391 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4997480428314511735, guid: 314a6f36ed86bf444a0e878148156e9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1119705390}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7861fa04012b7f145a76220bd55ed27c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1120446161
 GameObject:
   m_ObjectHideFlags: 0
