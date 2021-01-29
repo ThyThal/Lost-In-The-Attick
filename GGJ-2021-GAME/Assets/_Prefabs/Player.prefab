@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63520e8845d3b854cb8a7e0646a88b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _flashlight: {fileID: 0}
+  _flashlight: {fileID: 3183465877718339736}
 --- !u!114 &4218375824586223201
 MonoBehaviour:
   m_ObjectHideFlags: 0
