@@ -2,21 +2,26 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float velocity = 0f;
-    private Rigidbody2D rb = null;
+    [SerializeField] private float velocity = 10f;
+    private Rigidbody2D _rigidbody = null;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
-    {
+    private void Update()
+    {        
         var movX = Input.GetAxis("Horizontal");
         var movY = Input.GetAxis("Vertical");
 
-        var movNormaliced = new Vector2(movX, movY).normalized * velocity;
+        var moveDirection = new Vector2(movX, movY).normalized;
+        Move(moveDirection);
+    }
 
-        rb.velocity = movNormaliced;
+    private void Move(Vector2 direction)
+    {
+        var moveVelocity = direction * velocity;
+        _rigidbody.velocity = moveVelocity;
     }
 }
