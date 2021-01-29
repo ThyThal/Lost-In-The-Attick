@@ -1,7 +1,826 @@
 fileFormatVersion: 2
 guid: e0e0ca5f993903c4f8250a572c8c061d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7126869073311518781
+    second: Player Movement Tile_0
+  - first:
+      213: 8842009973302597351
+    second: Player Movement Tile_1
+  - first:
+      213: -408803595554565133
+    second: Player Movement Tile_2
+  - first:
+      213: -4140958516781160622
+    second: Player Movement Tile_3
+  - first:
+      213: -2324463857045403380
+    second: Player Movement Tile_4
+  - first:
+      213: -3578051864058156815
+    second: Player Movement Tile_5
+  - first:
+      213: 3866305473033282008
+    second: Player Movement Tile_6
+  - first:
+      213: -7226789558361141704
+    second: Player Movement Tile_7
+  - first:
+      213: 6322086198914707948
+    second: Player Movement Tile_8
+  - first:
+      213: 1264540113980994225
+    second: Player Movement Tile_9
+  - first:
+      213: -3696254667377335596
+    second: Player Movement Tile_10
+  - first:
+      213: -7530081940745465348
+    second: Player Movement Tile_11
+  - first:
+      213: -1399253781276153002
+    second: Player Movement Tile_12
+  - first:
+      213: 2605954602229318250
+    second: Player Movement Tile_13
+  - first:
+      213: -2164781550273493797
+    second: Player Movement Tile_14
+  - first:
+      213: -3584995303172244359
+    second: Player Movement Tile_15
+  - first:
+      213: 8445555414067499017
+    second: Player Movement Tile_16
+  - first:
+      213: -583493293744790565
+    second: Player Movement Tile_17
+  - first:
+      213: -8209529469151939720
+    second: Player Movement Tile_18
+  - first:
+      213: -995376000915306664
+    second: Player Movement Tile_19
+  - first:
+      213: 6397400571661935741
+    second: Player Movement Tile_20
+  - first:
+      213: -7498051392030199246
+    second: Player Movement Tile_21
+  - first:
+      213: 617857890603904702
+    second: Player Movement Tile_22
+  - first:
+      213: 4184411135249187786
+    second: Player Movement Tile_23
+  - first:
+      213: -7512045115367556708
+    second: Player Movement Tile_24
+  - first:
+      213: -3211757973506458675
+    second: Player Movement Tile_25
+  - first:
+      213: -828948843505653627
+    second: Player Movement Tile_26
+  - first:
+      213: -1602003246466234732
+    second: Player Movement Tile_27
+  - first:
+      213: -3497228588690287775
+    second: Player Movement Tile_28
+  - first:
+      213: -5825337687562663325
+    second: Player Movement Tile_29
+  - first:
+      213: 1129715821173579243
+    second: Player Movement Tile_30
+  - first:
+      213: 4273036965215713415
+    second: Player Movement Tile_31
+  - first:
+      213: -6443386426677194349
+    second: Player Movement Tile_32
+  - first:
+      213: 858333843735642355
+    second: Player Movement Tile_33
+  - first:
+      213: -2782562295477625927
+    second: Player Movement Tile_34
+  - first:
+      213: -7802842947116278325
+    second: Player Movement Tile_35
+  - first:
+      213: 4664891839607168675
+    second: Player Movement Tile_36
+  - first:
+      213: -5287745358203734399
+    second: Player Movement Tile_37
+  - first:
+      213: 3060846926061941064
+    second: Player Movement Tile_38
+  - first:
+      213: -6269683884333656831
+    second: Player Movement Tile_39
+  - first:
+      213: -1646112415576811300
+    second: Player Movement Tile_40
+  - first:
+      213: -7191003734903802737
+    second: Player Movement Tile_41
+  - first:
+      213: -5964157840892286964
+    second: Player Movement Tile_42
+  - first:
+      213: -1911327967520828442
+    second: Player Movement Tile_43
+  - first:
+      213: -1932044740162037736
+    second: Player Movement Tile_44
+  - first:
+      213: 4685170413462993449
+    second: Player Movement Tile_45
+  - first:
+      213: -1925855709896647734
+    second: Player Movement Tile_46
+  - first:
+      213: 3164450787440945744
+    second: Player Movement Tile_47
+  - first:
+      213: -7396763595560480568
+    second: Player Movement Tile_48
+  - first:
+      213: 4488904263446550506
+    second: Player Movement Tile_49
+  - first:
+      213: 4294735333702109646
+    second: Player Movement Tile_50
+  - first:
+      213: -7296209970638909703
+    second: Player Movement Tile_51
+  - first:
+      213: -2085331234153244889
+    second: Player Movement Tile_52
+  - first:
+      213: -8074376869833402082
+    second: Player Movement Tile_53
+  - first:
+      213: -3016498811684169913
+    second: Player Movement Tile_54
+  - first:
+      213: -6281938721477573638
+    second: Player Movement Tile_55
+  - first:
+      213: -8375767026322652818
+    second: Player Movement Tile_56
+  - first:
+      213: 4633360108030486143
+    second: Player Movement Tile_57
+  - first:
+      213: 5635835915299068172
+    second: Player Movement Tile_58
+  - first:
+      213: 3577856912433320834
+    second: Player Movement Tile_59
+  - first:
+      213: 3808600765540274126
+    second: Player Movement Tile_60
+  - first:
+      213: -627053768354635976
+    second: Player Movement Tile_61
+  - first:
+      213: -8729368728254473495
+    second: Player Movement Tile_62
+  - first:
+      213: 8050172441870000295
+    second: Player Movement Tile_63
+  - first:
+      213: -9009767166166951457
+    second: Player Movement Tile_64
+  - first:
+      213: -3559047941641240951
+    second: Player Movement Tile_65
+  - first:
+      213: -4509819698510757420
+    second: Player Movement Tile_66
+  - first:
+      213: -7655633273303306969
+    second: Player Movement Tile_67
+  - first:
+      213: -1965478792388305443
+    second: Player Movement Tile_68
+  - first:
+      213: 5579543278335964432
+    second: Player Movement Tile_69
+  - first:
+      213: -8923713168234031249
+    second: Player Movement Tile_70
+  - first:
+      213: 228842825253315107
+    second: Player Movement Tile_71
+  - first:
+      213: -3566955279882047846
+    second: Player Movement Tile_72
+  - first:
+      213: 6781832851066399413
+    second: Player Movement Tile_73
+  - first:
+      213: 5109640178017507195
+    second: Player Movement Tile_74
+  - first:
+      213: 3540186589221019424
+    second: Player Movement Tile_75
+  - first:
+      213: 6244659013605860433
+    second: Player Movement Tile_76
+  - first:
+      213: -4733709181537080865
+    second: Player Movement Tile_77
+  - first:
+      213: -8398126581991877900
+    second: Player Movement Tile_78
+  - first:
+      213: 6186263568029452171
+    second: Player Movement Tile_79
+  - first:
+      213: -6555989500520224847
+    second: Player Movement Tile_80
+  - first:
+      213: 5272528535173890093
+    second: Player Movement Tile_81
+  - first:
+      213: -7173468332830103723
+    second: Player Movement Tile_82
+  - first:
+      213: -3672056665030656610
+    second: Player Movement Tile_83
+  - first:
+      213: -6627509830574186207
+    second: Player Movement Tile_84
+  - first:
+      213: 409281211666868728
+    second: Player Movement Tile_85
+  - first:
+      213: -9173178538871807715
+    second: Player Movement Tile_86
+  - first:
+      213: 4398679907501228733
+    second: Player Movement Tile_87
+  - first:
+      213: 4405932323463355749
+    second: Player Movement Tile_88
+  - first:
+      213: -7339259612213504333
+    second: Player Movement Tile_89
+  - first:
+      213: 5966885504425753516
+    second: Player Movement Tile_90
+  - first:
+      213: 6015584590110410828
+    second: Player Movement Tile_91
+  - first:
+      213: -8074025091169290957
+    second: Player Movement Tile_92
+  - first:
+      213: 2434121827038569997
+    second: Player Movement Tile_93
+  - first:
+      213: -432206485409249371
+    second: Player Movement Tile_94
+  - first:
+      213: -8196966723052756259
+    second: Player Movement Tile_95
+  - first:
+      213: -8845813436754093849
+    second: Player Movement Tile_96
+  - first:
+      213: -2781431552840361414
+    second: Player Movement Tile_97
+  - first:
+      213: -4992070236383421120
+    second: Player Movement Tile_98
+  - first:
+      213: 7300423695051296951
+    second: Player Movement Tile_99
+  - first:
+      213: -3759340703767590029
+    second: Player Movement Tile_100
+  - first:
+      213: -8989166581008902789
+    second: Player Movement Tile_101
+  - first:
+      213: 7227523451858897827
+    second: Player Movement Tile_102
+  - first:
+      213: -394425294852136101
+    second: Player Movement Tile_103
+  - first:
+      213: -4561462525683434190
+    second: Player Movement Tile_104
+  - first:
+      213: 9184039716658046928
+    second: Player Movement Tile_105
+  - first:
+      213: -61675861055086498
+    second: Player Movement Tile_106
+  - first:
+      213: -5501609713193204851
+    second: Player Movement Tile_107
+  - first:
+      213: 4641742046570150592
+    second: Player Movement Tile_108
+  - first:
+      213: -2334119664312485283
+    second: Player Movement Tile_109
+  - first:
+      213: 4296942075375767116
+    second: Player Movement Tile_110
+  - first:
+      213: -6393742461076776453
+    second: Player Movement Tile_111
+  - first:
+      213: 4573124895754926112
+    second: Player Movement Tile_112
+  - first:
+      213: 8783249222691617839
+    second: Player Movement Tile_113
+  - first:
+      213: -8048955815621740467
+    second: Player Movement Tile_114
+  - first:
+      213: -8565650752589710225
+    second: Player Movement Tile_115
+  - first:
+      213: -1979973791377483027
+    second: Player Movement Tile_116
+  - first:
+      213: 3487542655332162895
+    second: Player Movement Tile_117
+  - first:
+      213: 4972221103666357207
+    second: Player Movement Tile_118
+  - first:
+      213: -8626273238020154610
+    second: Player Movement Tile_119
+  - first:
+      213: -5371098875999705329
+    second: Player Movement Tile_120
+  - first:
+      213: -7351112795584950466
+    second: Player Movement Tile_121
+  - first:
+      213: 4697391936551838086
+    second: Player Movement Tile_122
+  - first:
+      213: 183236787032548754
+    second: Player Movement Tile_123
+  - first:
+      213: -3039435484061342129
+    second: Player Movement Tile_124
+  - first:
+      213: 2960675291821282865
+    second: Player Movement Tile_125
+  - first:
+      213: 6061067495269497842
+    second: Player Movement Tile_126
+  - first:
+      213: 3643160924976721126
+    second: Player Movement Tile_127
+  - first:
+      213: -3812314059055616071
+    second: Player Movement Tile_128
+  - first:
+      213: 3567311081609426553
+    second: Player Movement Tile_129
+  - first:
+      213: -7831150980275496737
+    second: Player Movement Tile_130
+  - first:
+      213: 4864806315364910764
+    second: Player Movement Tile_131
+  - first:
+      213: 7759291462666451089
+    second: Player Movement Tile_132
+  - first:
+      213: 7828156816032013596
+    second: Player Movement Tile_133
+  - first:
+      213: 410407689894476220
+    second: Player Movement Tile_134
+  - first:
+      213: 7902747133341586886
+    second: Player Movement Tile_135
+  - first:
+      213: -5515408777749154179
+    second: Player Movement Tile_136
+  - first:
+      213: 8872892558067748263
+    second: Player Movement Tile_137
+  - first:
+      213: -4389612885523462288
+    second: Player Movement Tile_138
+  - first:
+      213: -886863064411385709
+    second: Player Movement Tile_139
+  - first:
+      213: 8904938619530727433
+    second: Player Movement Tile_140
+  - first:
+      213: -4949418459976462460
+    second: Player Movement Tile_141
+  - first:
+      213: -7563614427228822032
+    second: Player Movement Tile_142
+  - first:
+      213: 1543502544999383918
+    second: Player Movement Tile_143
+  - first:
+      213: -8401044029718247105
+    second: Player Movement Tile_144
+  - first:
+      213: 2598307620397714684
+    second: Player Movement Tile_145
+  - first:
+      213: -4358891448395064849
+    second: Player Movement Tile_146
+  - first:
+      213: 2227075862882900478
+    second: Player Movement Tile_147
+  - first:
+      213: -4749947566938266284
+    second: Player Movement Tile_148
+  - first:
+      213: -2059306278873749323
+    second: Player Movement Tile_149
+  - first:
+      213: -1668212033108124094
+    second: Player Movement Tile_150
+  - first:
+      213: 4666840717846798378
+    second: Player Movement Tile_151
+  - first:
+      213: -8355384551965649082
+    second: Player Movement Tile_152
+  - first:
+      213: 3248964591657980231
+    second: Player Movement Tile_153
+  - first:
+      213: 7255641549338651314
+    second: Player Movement Tile_154
+  - first:
+      213: -4568057024257277503
+    second: Player Movement Tile_155
+  - first:
+      213: 2318303547174053892
+    second: Player Movement Tile_156
+  - first:
+      213: -6250634157603864785
+    second: Player Movement Tile_157
+  - first:
+      213: 4948213457201497063
+    second: Player Movement Tile_158
+  - first:
+      213: -3999637955094319181
+    second: Player Movement Tile_159
+  - first:
+      213: 4494029383054999697
+    second: Player Movement Tile_160
+  - first:
+      213: -8171821977470619706
+    second: Player Movement Tile_161
+  - first:
+      213: 5427695403525198905
+    second: Player Movement Tile_162
+  - first:
+      213: -1155697012758329952
+    second: Player Movement Tile_163
+  - first:
+      213: 2078284820992137049
+    second: Player Movement Tile_164
+  - first:
+      213: -4804896175860042332
+    second: Player Movement Tile_165
+  - first:
+      213: -6539717346342021333
+    second: Player Movement Tile_166
+  - first:
+      213: -7856972503632742502
+    second: Player Movement Tile_167
+  - first:
+      213: -5631533092782678675
+    second: Player Movement Tile_168
+  - first:
+      213: -4491154400221878488
+    second: Player Movement Tile_169
+  - first:
+      213: 8780880918460930497
+    second: Player Movement Tile_170
+  - first:
+      213: 92061254294282465
+    second: Player Movement Tile_171
+  - first:
+      213: -1733806396841685046
+    second: Player Movement Tile_172
+  - first:
+      213: 599299735702371929
+    second: Player Movement Tile_173
+  - first:
+      213: -6760532675458300476
+    second: Player Movement Tile_174
+  - first:
+      213: -1915304495255627150
+    second: Player Movement Tile_175
+  - first:
+      213: 4494143343109690531
+    second: Player Movement Tile_176
+  - first:
+      213: 6340166406443989127
+    second: Player Movement Tile_177
+  - first:
+      213: -5123691710757359932
+    second: Player Movement Tile_178
+  - first:
+      213: 5249261521366793237
+    second: Player Movement Tile_179
+  - first:
+      213: -6446123090754528398
+    second: Player Movement Tile_180
+  - first:
+      213: 8176773272568608132
+    second: Player Movement Tile_181
+  - first:
+      213: -6717708552965017307
+    second: Player Movement Tile_182
+  - first:
+      213: -3524786055326529038
+    second: Player Movement Tile_183
+  - first:
+      213: -8433707773264740440
+    second: Player Movement Tile_184
+  - first:
+      213: 4161613164228874108
+    second: Player Movement Tile_185
+  - first:
+      213: -8596845417875166211
+    second: Player Movement Tile_186
+  - first:
+      213: -8869978033494167948
+    second: Player Movement Tile_187
+  - first:
+      213: -1145643648489993741
+    second: Player Movement Tile_188
+  - first:
+      213: -997777914022969783
+    second: Player Movement Tile_189
+  - first:
+      213: 8778349996328675781
+    second: Player Movement Tile_190
+  - first:
+      213: -4199434832509401989
+    second: Player Movement Tile_191
+  - first:
+      213: -2044730119854973368
+    second: Player Movement Tile_192
+  - first:
+      213: -8120247824720833006
+    second: Player Movement Tile_193
+  - first:
+      213: 4747112285749177297
+    second: Player Movement Tile_194
+  - first:
+      213: -6473252832910381821
+    second: Player Movement Tile_195
+  - first:
+      213: 7199103832210379423
+    second: Player Movement Tile_196
+  - first:
+      213: -8179027932245569159
+    second: Player Movement Tile_197
+  - first:
+      213: -5215781619714663720
+    second: Player Movement Tile_198
+  - first:
+      213: 4442968083702611332
+    second: Player Movement Tile_199
+  - first:
+      213: -1700882424229607286
+    second: Player Movement Tile_200
+  - first:
+      213: -2485906283724240021
+    second: Player Movement Tile_201
+  - first:
+      213: 3303113525909857939
+    second: Player Movement Tile_202
+  - first:
+      213: -5508787570152352883
+    second: Player Movement Tile_203
+  - first:
+      213: -1308785686836377353
+    second: Player Movement Tile_204
+  - first:
+      213: -1906633295685819214
+    second: Player Movement Tile_205
+  - first:
+      213: -776266133820313124
+    second: Player Movement Tile_206
+  - first:
+      213: 1422090275500040467
+    second: Player Movement Tile_207
+  - first:
+      213: -3471951714107982491
+    second: Player Movement Tile_208
+  - first:
+      213: -2852269733433171272
+    second: Player Movement Tile_209
+  - first:
+      213: -5554879187597386720
+    second: Player Movement Tile_210
+  - first:
+      213: 2928273730918038860
+    second: Player Movement Tile_211
+  - first:
+      213: 1794160674688410981
+    second: Player Movement Tile_212
+  - first:
+      213: -2774569575770043922
+    second: Player Movement Tile_213
+  - first:
+      213: -6729930870287355244
+    second: Player Movement Tile_214
+  - first:
+      213: -7289725170300793365
+    second: Player Movement Tile_215
+  - first:
+      213: 7405844650264188992
+    second: Player Movement Tile_216
+  - first:
+      213: 5633261071116603606
+    second: Player Movement Tile_217
+  - first:
+      213: 4048328687208165988
+    second: Player Movement Tile_218
+  - first:
+      213: -6559605837139479493
+    second: Player Movement Tile_219
+  - first:
+      213: 2546492465783625724
+    second: Player Movement Tile_220
+  - first:
+      213: 7661353532826795683
+    second: Player Movement Tile_221
+  - first:
+      213: -8360514971500415410
+    second: Player Movement Tile_222
+  - first:
+      213: -3071872691894935879
+    second: Player Movement Tile_223
+  - first:
+      213: -542510855498241505
+    second: Player Movement Tile_224
+  - first:
+      213: 1156614587981233313
+    second: Player Movement Tile_225
+  - first:
+      213: -2053993684048698374
+    second: Player Movement Tile_226
+  - first:
+      213: -6443054389974346809
+    second: Player Movement Tile_227
+  - first:
+      213: -6986084398515214086
+    second: Player Movement Tile_228
+  - first:
+      213: 8013644629581873678
+    second: Player Movement Tile_229
+  - first:
+      213: -4366781972310942269
+    second: Player Movement Tile_230
+  - first:
+      213: -7394364816476707554
+    second: Player Movement Tile_231
+  - first:
+      213: -876516454540964206
+    second: Player Movement Tile_232
+  - first:
+      213: 315503890114526190
+    second: Player Movement Tile_233
+  - first:
+      213: 3505955566938294092
+    second: Player Movement Tile_234
+  - first:
+      213: -6357464146867079557
+    second: Player Movement Tile_235
+  - first:
+      213: 1287938173901982443
+    second: Player Movement Tile_236
+  - first:
+      213: 2630692942198837657
+    second: Player Movement Tile_237
+  - first:
+      213: 1960452046560993564
+    second: Player Movement Tile_238
+  - first:
+      213: -3477527784882605330
+    second: Player Movement Tile_239
+  - first:
+      213: -396546665527530689
+    second: Player Movement Tile_240
+  - first:
+      213: -7214815047548861525
+    second: Player Movement Tile_241
+  - first:
+      213: 7665787600304559128
+    second: Player Movement Tile_242
+  - first:
+      213: 195866948334299988
+    second: Player Movement Tile_243
+  - first:
+      213: 1504971355940513593
+    second: Player Movement Tile_244
+  - first:
+      213: 6301167560942877094
+    second: Player Movement Tile_245
+  - first:
+      213: 6971744294709789602
+    second: Player Movement Tile_246
+  - first:
+      213: -5020566673393914952
+    second: Player Movement Tile_247
+  - first:
+      213: 2044032967556297734
+    second: Player Movement Tile_248
+  - first:
+      213: 6065517874721990952
+    second: Player Movement Tile_249
+  - first:
+      213: 2799457890116348325
+    second: Player Movement Tile_250
+  - first:
+      213: -159956498400282218
+    second: Player Movement Tile_251
+  - first:
+      213: -4433969707872633838
+    second: Player Movement Tile_252
+  - first:
+      213: -5140845071237656049
+    second: Player Movement Tile_253
+  - first:
+      213: -6114586112314513208
+    second: Player Movement Tile_254
+  - first:
+      213: 5227091742062391850
+    second: Player Movement Tile_255
+  - first:
+      213: -1444735508300338425
+    second: Player Movement Tile_256
+  - first:
+      213: 8571397784354751531
+    second: Player Movement Tile_257
+  - first:
+      213: -1039380168526560570
+    second: Player Movement Tile_258
+  - first:
+      213: 6827110313348732570
+    second: Player Movement Tile_259
+  - first:
+      213: -355306720824096562
+    second: Player Movement Tile_260
+  - first:
+      213: 3172647058009548399
+    second: Player Movement Tile_261
+  - first:
+      213: -6223672196575296554
+    second: Player Movement Tile_262
+  - first:
+      213: -419736920680301806
+    second: Player Movement Tile_263
+  - first:
+      213: -1731702113169682320
+    second: Player Movement Tile_264
+  - first:
+      213: -8718284350784856571
+    second: Player Movement Tile_265
+  - first:
+      213: 9174172973712091466
+    second: Player Movement Tile_266
+  - first:
+      213: -7457694041602289212
+    second: Player Movement Tile_267
+  - first:
+      213: -2719268026697188620
+    second: Player Movement Tile_268
+  - first:
+      213: 818519412927272815
+    second: Player Movement Tile_269
+  - first:
+      213: -1277654522033362182
+    second: Player Movement Tile_270
+  - first:
+      213: -4559366004506870693
+    second: Player Movement Tile_271
+  - first:
+      213: -4105213454516301772
+    second: Player Movement Tile_272
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +850,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +859,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -61,7 +880,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -73,7 +904,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Player Movement Tile_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfac8c6656481d90800000000000000
+      internalID: -7126869073311518781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e69927493125ba70800000000000000
+      internalID: 8842009973302597351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f35118bb43a35af0800000000000000
+      internalID: -408803595554565133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25761a13b2c5886c0800000000000000
+      internalID: -4140958516781160622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0903930078ddbfd0800000000000000
+      internalID: -2324463857045403380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8a3e679c4385ec0800000000000000
+      internalID: -3578051864058156815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d12c49d750e7a530800000000000000
+      internalID: 3866305473033282008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ec1639f2945bb90800000000000000
+      internalID: -7226789558361141704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1f5bde6ef8cb750800000000000000
+      internalID: 6322086198914707948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2b11aa88c8c8110800000000000000
+      internalID: 1264540113980994225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2289fa6f344bcc0800000000000000
+      internalID: -3696254667377335596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf15848fe56cf7790800000000000000
+      internalID: -7530081940745465348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ba968791ad49ce0800000000000000
+      internalID: -1399253781276153002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Movement Tile_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a624cae57e53a2420800000000000000
+      internalID: 2605954602229318250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
