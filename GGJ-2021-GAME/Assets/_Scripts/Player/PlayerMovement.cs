@@ -19,8 +19,19 @@ public class PlayerMovement : MonoBehaviour
 
         var moveDirection = new Vector2(movX, movY).normalized;
         Move(moveDirection);
-        _animator.SetFloat("MovementX", movX);
-        _animator.SetFloat("MovementY", movY);
+
+        var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var positionDifference = Vector3.zero;
+
+        positionDifference.x = mousePosition.x - transform.position.x;
+        positionDifference.y = mousePosition.y - transform.position.y;
+
+        positionDifference.Normalize();
+
+        print(positionDifference);
+
+        _animator.SetFloat("MovementX", positionDifference.x);
+        _animator.SetFloat("MovementY", positionDifference.y);
     }
 
     private void Move(Vector2 direction)
