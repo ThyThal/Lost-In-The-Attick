@@ -28,8 +28,6 @@ public class PlayerMovement : MonoBehaviour
 
         positionDifference.Normalize();
 
-        print(positionDifference);
-
         _animator.SetFloat("LookMouseX", positionDifference.x);
         _animator.SetFloat("LookMouseY", positionDifference.y);
 
