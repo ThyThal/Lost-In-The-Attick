@@ -30,8 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
         print(positionDifference);
 
-        _animator.SetFloat("MovementX", positionDifference.x);
-        _animator.SetFloat("MovementY", positionDifference.y);
+        _animator.SetFloat("LookMouseX", positionDifference.x);
+        _animator.SetFloat("LookMouseY", positionDifference.y);
+
+        if (moveDirection.SqrMagnitude() != 0) _animator.SetBool("IsMoving", true);
+        else _animator.SetBool("IsMoving", false);
     }
 
     private void Move(Vector2 direction)
