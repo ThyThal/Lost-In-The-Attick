@@ -43,8 +43,6 @@ public class FlashlightSkill : MonoBehaviour
                 canCount = false;
                 light2D.pointLightOuterRadius = originalRadius;
             }
-
-            
         }
     }
 }
