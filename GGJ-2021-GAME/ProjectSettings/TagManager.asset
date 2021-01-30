@@ -20,7 +20,7 @@ TagManager:
   - Obstacles
   - PlayerFeet
   - Walls
-  - 
+  - Triggers
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4250107457
+    locked: 0
+  - name: Enemy
+    uniqueID: 1868201659
     locked: 0
   - name: UI
     uniqueID: 4238452873
