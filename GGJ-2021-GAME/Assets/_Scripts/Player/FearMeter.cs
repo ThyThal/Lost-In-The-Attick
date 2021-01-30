@@ -19,22 +19,25 @@ public class FearMeter : MonoBehaviour
 
     private void Update()
     {
-        if (nearEnemys > 0)
+        if (GameManager.Instance.IsPaused())
         {
-            fearAmount += nearEnemys * fearIncreaseModifier * Time.deltaTime;
-        }
-        else if (nearEnemys == 0 && fearAmount > 0)
-        {
-            fearAmount -= fearDecreaseModifier * Time.deltaTime;
-        }
-        else
-        {
-            fearAmount = 0f;
-        }
+            if (nearEnemys > 0)
+            {
+                fearAmount += nearEnemys * fearIncreaseModifier * Time.deltaTime;
+            }
+            else if (nearEnemys == 0 && fearAmount > 0)
+            {
+                fearAmount -= fearDecreaseModifier * Time.deltaTime;
+            }
+            else
+            {
+                fearAmount = 0f;
+            }
 
-        if (fearAmount >= maxFear)
-        {
-            OnFrightened.Invoke();
+            if (fearAmount >= maxFear)
+            {
+                OnFrightened.Invoke();
+            }
         }
     }
 
