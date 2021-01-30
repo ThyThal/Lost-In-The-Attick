@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -353,6 +353,11 @@ PrefabInstance:
       propertyPath: _levelLoader
       value: 
       objectReference: {fileID: 316369044}
+    - target: {fileID: 6656931272067835112, guid: 1583aa4a1537a5b4e8cdb58d21fd4528,
+        type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 937434628}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1583aa4a1537a5b4e8cdb58d21fd4528, type: 3}
 --- !u!1 &306672714
@@ -12179,7 +12184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ed42a8e3a607246ad0f94eb8b93ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1062240607}
   buttonResume: {fileID: 817676077}
   buttonMainMenu: {fileID: 669044741}
   buttonHelp: {fileID: 1765752598}
@@ -12388,6 +12393,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1062240607 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6656931272067835112, guid: 1583aa4a1537a5b4e8cdb58d21fd4528,
+    type: 3}
+  m_PrefabInstance: {fileID: 266335101}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142ea141151ea0f4590df49fb5738200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1070182906
 GameObject:
   m_ObjectHideFlags: 0
