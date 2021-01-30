@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _flashlight.LightMove();
+        if (!GameManager.Instance.IsPaused())
+        {
+            _flashlight.LightMove();
+        }
     }
 }

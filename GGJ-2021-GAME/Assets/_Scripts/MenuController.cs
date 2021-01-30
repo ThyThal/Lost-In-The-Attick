@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField] private LevelLoader _levelLoader;
     [SerializeField] private Animator _animator;
 
     // Update is called once per frame
@@ -14,10 +15,10 @@ public class MenuController : MonoBehaviour
         
     }
 
-    public void OnClickPlay() { SceneManager.LoadScene("Game"); }
+    public void OnClickPlay() { _levelLoader.LoadScene(GameManager.Instance.gameScene); }
     public void OnClickCredits() { _animator.SetTrigger("ShowCredits"); }
-    public void OnClickHelp() { }
     public void OnClickBack() { _animator.SetTrigger("HideCredits"); }
+    public void OnClickHelp() { }
     public void OnClickExit() {
         #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();

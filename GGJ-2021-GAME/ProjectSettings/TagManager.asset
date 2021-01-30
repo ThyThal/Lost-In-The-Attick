@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameManager
   - Obstacles
+  - Level Loader
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - Player
   - Obstacles
-  - 
-  - 
+  - PlayerFeet
+  - Walls
   - 
   - 
   - 
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 2020865231
+    locked: 0
+  - name: Walls
+    uniqueID: 4088047017
     locked: 0
   - name: Player
     uniqueID: 4250107457
