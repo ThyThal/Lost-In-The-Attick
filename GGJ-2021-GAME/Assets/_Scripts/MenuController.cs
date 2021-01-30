@@ -53,6 +53,7 @@ public class MenuController : MonoBehaviour
         #endif
         Application.Quit();
     }
+
     private void PlaySound(AudioClip soundToPlay)
     {
         PressSound.clip = soundToPlay;

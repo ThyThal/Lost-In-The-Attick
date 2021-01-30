@@ -16,12 +16,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!GameManager.Instance.IsPaused())
         {
-            var movX = Input.GetAxis("Horizontal");
-            var movY = Input.GetAxis("Vertical");
+            // Movement
+            _rigidbody.velocity = Vector2.zero;
+            var movX = Input.GetAxisRaw("Horizontal");
+            var movY = Input.GetAxisRaw("Vertical");
 
             var moveDirection = new Vector2(movX, movY).normalized;
             Move(moveDirection);
 
+
+            // Animator
             var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var positionDifference = Vector3.zero;
 
@@ -41,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move(Vector2 direction)
     {
         var moveVelocity = direction * velocity;
-        _rigidbody.velocity = moveVelocity;
+        if (direction != Vector2.zero) { _rigidbody.velocity = moveVelocity; }
+        else { _rigidbody.velocity = Vector2.zero; }
     }
 }
