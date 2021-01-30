@@ -97,7 +97,6 @@ public class GameManager : MonoBehaviour
     private void OnVictoryHandler()
     {
         print("Ganaste");
-
         // TODO: poner pantalla de Victoria
     }
 }

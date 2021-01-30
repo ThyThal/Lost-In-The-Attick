@@ -16,7 +16,6 @@ public class VictoryTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player") && GameManager.Instance.GetQuestObject() != null)
         {
-            print("Trigger");
             OnVictory.Invoke();
         }
     }
