@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] public string gameScene = "Main Game";
 
     [SerializeField] public LevelLoader levelLoader;
+    [SerializeField] public PauseMenuController pauseMenu;
 
     public static GameManager Instance;
 
-    [SerializeField] private PauseMenuController pauseMenu = null;
 
     private bool isPaused = false;
 
@@ -39,14 +39,26 @@ public class GameManager : MonoBehaviour
 		
 		if (Input.GetKeyDown(KeyCode.Escape))
         {
+            ShowPause();
             isPaused = true;
-            pauseMenu.gameObject.SetActive(true);
         }
     }
 	
 	public bool IsPaused()
     {
         return isPaused;
+    }
+
+    private void ShowPause()
+    {
+        pauseMenu.canvasGroup.alpha = 1;
+        pauseMenu.canvasGroup.interactable = true;
+    }
+
+    public void HidePause()
+    {
+        pauseMenu.canvasGroup.alpha = 0;
+        pauseMenu.canvasGroup.interactable = false;
     }
 
     public void SetPause(bool value)

@@ -17,12 +17,20 @@ public class PauseMenuController : MonoBehaviour
     [Header("Menu")]
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject helpMenu;
+    [SerializeField] public CanvasGroup canvasGroup;
+    [SerializeField] private Animator _animator;
 
     //Extras
     private bool pauseMenuActive;
 
-    void Start()
+    private void Awake()
     {
+        GameManager.Instance.pauseMenu = this;
+        canvasGroup.alpha = 0;
+    }
+
+    void Start()
+    {        
         buttonResume.onClick.AddListener(OnClickResume);
         buttonHelp.onClick.AddListener(OnClickHelp);
         buttonQuit.onClick.AddListener(OnClickQuit);
@@ -35,7 +43,7 @@ public class PauseMenuController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && GameManager.Instance.IsPaused())
         {
             if (pauseMenuActive)
             {
@@ -50,7 +58,7 @@ public class PauseMenuController : MonoBehaviour
     public void OnClickResume() 
     { 
         GameManager.Instance.SetPause(false);
-        gameObject.SetActive(false);
+        GameManager.Instance.HidePause();
     }
 
     public void OnClickHelp() 
