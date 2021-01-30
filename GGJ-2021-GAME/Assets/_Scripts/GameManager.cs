@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    [SerializeField] private GameObject[] gameObjects = null;
     private GameObject questObject = null;
 
     private bool isPaused = false;
@@ -29,6 +30,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        AssignQuestObject();
     }
 
     private void Update()
@@ -73,8 +79,9 @@ public class GameManager : MonoBehaviour
         levelLoader.LoadScene(GameManager.Instance.menuScene);
     }
 
-    public void AssignQuestObject(GameObject go)
+    public void AssignQuestObject()
     {
-        questObject = go;
+        var length = gameObjects.Length;
+        questObject = length != 0 ? gameObjects[Random.Range(0, length - 1)] : null;
     }
 }
