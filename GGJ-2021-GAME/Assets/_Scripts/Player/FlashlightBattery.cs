@@ -7,6 +7,8 @@ public class FlashlightBattery : MonoBehaviour
     [SerializeField] private float decreaseBatteryModifier = 1f;
     [SerializeField] private float decreaseLightIntensityModifier = 1f;
 
+    public bool testMode = true;
+
     private float currentBattery = 0f;
     private bool flashlightState = true;
 
@@ -24,32 +26,36 @@ public class FlashlightBattery : MonoBehaviour
 
     private void Update()
     {
-        if (!GameManager.Instance.IsPaused())
+        if (!testMode)
         {
-            if (currentBattery > (maxBattery / 4))
+            if (!GameManager.Instance.IsPaused())
             {
-                currentBattery -= Time.deltaTime * decreaseBatteryModifier;
-            }
-            else if (currentBattery < (maxBattery / 4) && currentBattery > 0)
-            {
-                currentBattery -= Time.deltaTime * decreaseBatteryModifier;
-
-                if (light2D.intensity > 0)
+                if (currentBattery > (maxBattery / 4))
                 {
-                    light2D.intensity -= Time.deltaTime * decreaseLightIntensityModifier;
-                    //print(currentBattery);
+                    currentBattery -= Time.deltaTime * decreaseBatteryModifier;
+                }
+                else if (currentBattery < (maxBattery / 4) && currentBattery > 0)
+                {
+                    currentBattery -= Time.deltaTime * decreaseBatteryModifier;
+
+                    if (light2D.intensity > 0)
+                    {
+                        light2D.intensity -= Time.deltaTime * decreaseLightIntensityModifier;
+                        //print(currentBattery);
+                    }
+                }
+                else if (currentBattery < 0)
+                {
+                    currentBattery = 0;
+                }
+                else if (currentBattery == 0 && flashlightState)
+                {
+                    light2D.intensity = 0f;
+                    flashlightState = false;
                 }
             }
-            else if (currentBattery < 0)
-            {
-                currentBattery = 0;
-            }
-            else if(currentBattery == 0 && flashlightState)
-            {
-                light2D.intensity = 0f;
-                flashlightState = false;
-            }
         }
+
     }
 
     private void InitializeBattery()
