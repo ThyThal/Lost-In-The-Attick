@@ -5,33 +5,38 @@ using Pathfinding;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private Seeker _seeker;
+    [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private Transform _target;
     [SerializeField] private float _speed = 200f;
     [SerializeField] private float _nextWaypointDistance = 3f;
 
-    [SerializeField] private Seeker _seeker;
-    [SerializeField] private Rigidbody2D _rigidbody;
     private Path _path;
     private int _currentWaypoint = 0;
     private bool _reachedEndPath;
-
     private bool followPlayer = false;
-
     private Animator animator = null;
 
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
+        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.GetComponent<PlayerController>() != null)
+        {
+            FollowTrigger();
+        }
     }
 
 
     private void Update()
     {
+        
+
+
         if (followPlayer)
         {
 
@@ -77,7 +82,7 @@ public class EnemyController : MonoBehaviour
         if (_seeker.IsDone()) { _seeker.StartPath(_rigidbody.position, _target.position, OnPathComplete); }
     }
 
-    public void EnemyFindPath()
+    public void FollowTrigger()
     {
         followPlayer = true;
         InvokeRepeating("UpdatePath", 0f, 0.5f);

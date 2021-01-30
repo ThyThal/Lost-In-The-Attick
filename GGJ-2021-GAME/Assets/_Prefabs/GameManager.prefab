@@ -45,3 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuScene: Main Menu
   gameScene: Main Game
+  levelLoader: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  gameObjects: []
+  victoryTrigger: {fileID: 0}

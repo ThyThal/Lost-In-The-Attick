@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0.05
-  m_ApplyToSortingLayers: 00000000cff4737875c02d3ea9a5aaf3
+  m_ApplyToSortingLayers: 00000000cff4737875c02d3ea9a5aaf3bb7e5a6f
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -660,6 +660,10 @@ MonoBehaviour:
   maxFear: 100
   fearDecreaseModifier: 1
   fearIncreaseModifier: 1
+  _fearMask: {fileID: 0}
+  _color: {r: 0.5283019, g: 0.12210752, b: 0.43627852, a: 1}
+  fearAmount: 0
+  nearEnemys: 0
   OnFrightened:
     m_PersistentCalls:
       m_Calls: []
