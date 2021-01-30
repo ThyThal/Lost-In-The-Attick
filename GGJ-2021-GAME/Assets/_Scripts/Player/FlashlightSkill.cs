@@ -11,6 +11,13 @@ public class FlashlightSkill : MonoBehaviour
     private float timer = 0f;
     private bool canCount = false;
 
+    [SerializeField] private GameObject flashlightSound = null;
+
+    private void Start()
+    {
+        flashlightSound.gameObject.SetActive(false);
+    }
+
     private void Awake()
     {
         light2D = GetComponentInChildren<Light2D>();
@@ -23,6 +30,8 @@ public class FlashlightSkill : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
+                flashlightSound.gameObject.SetActive(true);
+                
                 light2D.pointLightOuterRadius = originalRadius * skillRadiusMultiplier;
                 timer = Time.time + skillDuration;
                 canCount = true;
@@ -30,9 +39,12 @@ public class FlashlightSkill : MonoBehaviour
 
             if (canCount && timer < Time.time)
             {
+                flashlightSound.gameObject.SetActive(false);
                 canCount = false;
                 light2D.pointLightOuterRadius = originalRadius;
             }
+
+            
         }
     }
 }
