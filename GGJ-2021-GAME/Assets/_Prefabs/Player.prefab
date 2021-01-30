@@ -60,7 +60,6 @@ MonoBehaviour:
   maxBattery: 10
   decreaseBatteryModifier: 1
   decreaseLightIntensityModifier: 1
-  minLightIntesity: 0.1
 --- !u!1 &3012499141448641363
 GameObject:
   m_ObjectHideFlags: 0
