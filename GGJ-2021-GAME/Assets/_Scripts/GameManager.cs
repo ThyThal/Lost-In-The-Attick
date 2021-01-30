@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    private GameObject questObject = null;
 
     private bool isPaused = false;
 
@@ -70,5 +71,10 @@ public class GameManager : MonoBehaviour
     private void GameOver()
     {
         levelLoader.LoadScene(GameManager.Instance.menuScene);
+    }
+
+    public void AssignQuestObject(GameObject go)
+    {
+        questObject = go;
     }
 }
