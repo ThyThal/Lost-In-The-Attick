@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5836045590589101991}
   - component: {fileID: 3183465877718339736}
   - component: {fileID: 7033958648117406574}
+  - component: {fileID: 1136121329}
   m_Layer: 8
   m_Name: Flashlight Pivot
   m_TagString: Untagged
@@ -61,6 +62,20 @@ MonoBehaviour:
   decreaseBatteryModifier: 1
   decreaseLightIntensityModifier: 1
   testMode: 1
+--- !u!114 &1136121329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959458427986171188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4155fc20c029be468598a084ec5cb24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillDuration: 1
+  skillRadiusMultiplier: 2
 --- !u!1 &3012499141448641363
 GameObject:
   m_ObjectHideFlags: 0
