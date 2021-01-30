@@ -74,7 +74,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void OnClickMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void OnClickGoBack() 

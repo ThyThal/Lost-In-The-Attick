@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         AssignQuestObject();
-        victoryTrigger.OnVictory.AddListener(OnVictoryHandler);
+        victoryTrigger?.OnVictory.AddListener(OnVictoryHandler);
     }
 
     private void Update()
