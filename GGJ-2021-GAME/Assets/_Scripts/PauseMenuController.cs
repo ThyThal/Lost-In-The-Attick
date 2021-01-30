@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager = null;
+
     [Header("Buttons")]
     [SerializeField] private Button buttonResume;
     [SerializeField] private Button buttonMainMenu;
@@ -50,7 +52,8 @@ public class PauseMenuController : MonoBehaviour
 
     public void OnClickResume() 
     { 
-        SceneManager.LoadScene("GameScene"); 
+        gameManager.SetPause(false);
+        gameObject.SetActive(false);
     }
 
     public void OnClickHelp() 
