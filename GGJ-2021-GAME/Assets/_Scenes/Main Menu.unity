@@ -1581,7 +1581,7 @@ PrefabInstance:
     - target: {fileID: 3537358856942276884, guid: 856aff721be303b478e2f0393dbcf17a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8491758606139042197, guid: 856aff721be303b478e2f0393dbcf17a,
         type: 3}
@@ -2160,5 +2160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6656931272067835112, guid: 1583aa4a1537a5b4e8cdb58d21fd4528,
+        type: 3}
+      propertyPath: levelLoader
+      value: 
+      objectReference: {fileID: 281720116}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1583aa4a1537a5b4e8cdb58d21fd4528, type: 3}
