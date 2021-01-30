@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5836045590589101991}
   - component: {fileID: 3183465877718339736}
+  - component: {fileID: 7033958648117406574}
   m_Layer: 8
   m_Name: Flashlight Pivot
   m_TagString: Untagged
@@ -44,6 +45,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7861fa04012b7f145a76220bd55ed27c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7033958648117406574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959458427986171188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c7897cff6eba843ae506857963cb93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBattery: 10
+  decreaseBatteryModifier: 1
+  decreaseLightIntensityModifier: 1
+  minLightIntesity: 0.1
 --- !u!1 &3012499141448641363
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +110,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000cff4737875c02d3e
+  m_ApplyToSortingLayers: 00000000cff47378417e53fde32b16d675c02d3e
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0

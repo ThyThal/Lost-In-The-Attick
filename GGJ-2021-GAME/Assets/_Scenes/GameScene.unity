@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4295,7 +4295,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7773722, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6527,90 +6527,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 978337135406931012, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 3012499141448641363, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_ShapeLightParametricSides
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: 2020865231
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[2]
-      value: -44859839
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[3]
-      value: -703190045
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_LightType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455369816938589076, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[4]
-      value: 1043185781
-      objectReference: {fileID: 0}
-    - target: {fileID: 4218375824270037354, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4218375824270037354, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4218375824270037354, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4218375824586223200, guid: 314a6f36ed86bf444a0e878148156e9d,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4218375824586223200, guid: 314a6f36ed86bf444a0e878148156e9d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4218375824586223204, guid: 314a6f36ed86bf444a0e878148156e9d,
         type: 3}
