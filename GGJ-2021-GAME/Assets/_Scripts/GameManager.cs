@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] gameObjects = null;
     private GameObject questObject = null;
 
+    public VictoryTrigger victoryTrigger = null;
+
     private bool isPaused = false;
 
     private void Awake()
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         AssignQuestObject();
+        victoryTrigger.OnVictory.AddListener(OnVictoryHandler);
     }
 
     private void Update()
@@ -76,6 +79,7 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
+        // TODO: poner pantalla de Derrota
         levelLoader.LoadScene(GameManager.Instance.menuScene);
     }
 
@@ -83,5 +87,17 @@ public class GameManager : MonoBehaviour
     {
         var length = gameObjects.Length;
         questObject = length != 0 ? gameObjects[Random.Range(0, length - 1)] : null;
+    }
+
+    public GameObject GetQuestObject()
+    {
+        return questObject;
+    }
+
+    private void OnVictoryHandler()
+    {
+        print("Ganaste");
+
+        // TODO: poner pantalla de Victoria
     }
 }
