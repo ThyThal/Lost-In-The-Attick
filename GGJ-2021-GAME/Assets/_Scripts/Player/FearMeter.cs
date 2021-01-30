@@ -19,7 +19,7 @@ public class FearMeter : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance.IsPaused())
+        if (!GameManager.Instance.IsPaused())
         {
             if (nearEnemys > 0)
             {

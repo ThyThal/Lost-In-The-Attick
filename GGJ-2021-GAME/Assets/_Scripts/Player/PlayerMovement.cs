@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance.IsPaused())
+        if (!GameManager.Instance.IsPaused())
         {
             var movX = Input.GetAxis("Horizontal");
             var movY = Input.GetAxis("Vertical");

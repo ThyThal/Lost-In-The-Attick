@@ -24,7 +24,7 @@ public class FlashlightBattery : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance.IsPaused())
+        if (!GameManager.Instance.IsPaused())
         {
             if (currentBattery > (maxBattery / 4))
             {
