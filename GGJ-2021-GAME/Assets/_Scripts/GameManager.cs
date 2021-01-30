@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void SetPause(bool value)
     {
         isPaused = value;
+    }
 
     private void GameOver()
     {
