@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] public LevelLoader levelLoader;
     [SerializeField] public PauseMenuController pauseMenu;
 
+    
+
     public static GameManager Instance;
 
 
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void SetPause(bool value)
     {
+
         isPaused = value;
     }
 
