@@ -7,8 +7,6 @@ public class FlashlightBattery : MonoBehaviour
     [SerializeField] private float decreaseBatteryModifier = 1f;
     [SerializeField] private float decreaseLightIntensityModifier = 1f;
 
-    public bool testMode = true;
-
     private float currentBattery = 0f;
     private bool flashlightState = true;
 
@@ -26,7 +24,7 @@ public class FlashlightBattery : MonoBehaviour
 
     private void Update()
     {
-        if (!testMode)
+        if (!GameManager.Instance.IsPaused())
         {
             if (currentBattery > (maxBattery / 4))
             {
@@ -46,13 +44,12 @@ public class FlashlightBattery : MonoBehaviour
             {
                 currentBattery = 0;
             }
-            else if (currentBattery == 0 && flashlightState)
+            else if(currentBattery == 0 && flashlightState)
             {
                 light2D.intensity = 0f;
                 flashlightState = false;
             }
         }
-
     }
 
     private void InitializeBattery()
