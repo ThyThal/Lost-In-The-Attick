@@ -26,7 +26,6 @@ public class PauseMenuController : MonoBehaviour
     private void Awake()
     {
         GameManager.Instance.pauseMenu = this;
-        canvasGroup.alpha = 0;
     }
 
     void Start()
@@ -52,6 +51,8 @@ public class PauseMenuController : MonoBehaviour
             {
                 OnClickGoBack();
             }
+
+            Input.ResetInputAxes();
         }
     }
 

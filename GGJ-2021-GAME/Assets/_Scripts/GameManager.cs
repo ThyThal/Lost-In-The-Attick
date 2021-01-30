@@ -37,10 +37,11 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 		
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
             ShowPause();
             isPaused = true;
+            Input.ResetInputAxes();
         }
     }
 	
