@@ -12,9 +12,13 @@ public class FearMeter : MonoBehaviour
 
     public UnityEvent OnFrightened;
 
+    [SerializeField] private GameObject fearSound = null;
+
     private void Start()
     {
         fearAmount = 0f;
+
+        fearSound.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -25,17 +29,21 @@ public class FearMeter : MonoBehaviour
             {
                 fearAmount += nearEnemys * fearIncreaseModifier * Time.deltaTime;
             }
+
             else if (nearEnemys == 0 && fearAmount > 0)
             {
                 fearAmount -= fearDecreaseModifier * Time.deltaTime;
             }
+
             else
             {
                 fearAmount = 0f;
             }
 
-            if (fearAmount >= maxFear)
+            if (fearAmount >= maxFear || Input.GetKeyDown(KeyCode.Q))
             {
+                fearSound.gameObject.SetActive(true);
+                
                 OnFrightened.Invoke();
             }
         }
