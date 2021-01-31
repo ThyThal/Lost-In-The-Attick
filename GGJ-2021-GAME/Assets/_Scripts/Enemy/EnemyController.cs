@@ -34,7 +34,8 @@ public class EnemyController : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
         _spawnPosition = transform.position;
         animator = GetComponentInChildren<Animator>();
-        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
+        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        animator.SetBool("IsMoving", false);
     }
 
     private void Update()
@@ -80,10 +81,6 @@ public class EnemyController : MonoBehaviour
 
             float distance = Vector2.Distance(_rigidbody.position, _path.vectorPath[_currentWaypoint]);
             if (distance < _nextWaypointDistance) { _currentWaypoint++; }
-        }
-        else
-        {
-            animator.SetBool("IsMoving", false);
         }
 
         currentSoundTriggerTime -= Time.deltaTime;
