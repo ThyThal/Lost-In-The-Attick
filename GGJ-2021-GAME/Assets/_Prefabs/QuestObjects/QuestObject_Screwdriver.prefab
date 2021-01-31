@@ -73,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpSound: {fileID: 8300000, guid: 4c31d593859b76b4eb0d362370c8fa0c, type: 3}
   volume: 0.6
+  itemId: 4
 --- !u!212 &4444675889110064658
 SpriteRenderer:
   m_ObjectHideFlags: 0
