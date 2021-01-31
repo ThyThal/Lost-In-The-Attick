@@ -13,16 +13,17 @@ public class FearMeter : MonoBehaviour
     [SerializeField]private float fearAmount = 0f;
     [SerializeField]private int nearEnemys = 0;
 
-    public UnityEvent OnFrightened;
-
-    [SerializeField] private GameObject fearSound = null;
+    [SerializeField] private AudioClip fearClip;
+    private AudioSource audioSrc;
 
     private void Start()
     {
         fearAmount = 0f;
 
-        fearSound.gameObject.SetActive(false);
+        audioSrc = GetComponent<AudioSource>();
+
     }
+
 
     private void Update()
     {
@@ -48,11 +49,12 @@ public class FearMeter : MonoBehaviour
                 fearAmount = 0f;
             }
 
-            if (fearAmount >= maxFear || Input.GetKeyDown(KeyCode.Q))
+            if (fearAmount >= maxFear)
             {
-                fearSound.gameObject.SetActive(true);
-                
-                OnFrightened.Invoke();
+
+                audioSrc.PlayOneShot(fearClip);
+
+                GameManager.Instance.GameOver();
             }
         }
     }
