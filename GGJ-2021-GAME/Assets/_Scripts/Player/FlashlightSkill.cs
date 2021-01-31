@@ -62,7 +62,8 @@ public class FlashlightSkill : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            print(collision.gameObject.name);
+            EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
+            enemyController.FleeTrigger();
         }
     }
 }
