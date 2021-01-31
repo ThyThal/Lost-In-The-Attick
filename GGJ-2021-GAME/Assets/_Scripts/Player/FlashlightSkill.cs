@@ -12,6 +12,8 @@ public class FlashlightSkill : MonoBehaviour
     private float timer = 0f;
     private bool canCount = false;
     private bool alreadyFired;
+    [SerializeField] private float fireIntensity;
+    
 
     [SerializeField] private GameObject flashlightSound = null;
 
@@ -41,6 +43,7 @@ public class FlashlightSkill : MonoBehaviour
                 flashlightSound.gameObject.SetActive(true);
                 
                 light2D.pointLightOuterRadius = originalRadius * skillRadiusMultiplier;
+                flashBatt.intensityModifier = fireIntensity;
                 timer = Time.time + skillDuration;
                 canCount = true;
                 flashBatt.ModifyBattery(-1);
@@ -52,6 +55,7 @@ public class FlashlightSkill : MonoBehaviour
                 flashlightSound.gameObject.SetActive(false);
                 canCount = false;
                 alreadyFired = false;
+                flashBatt.intensityModifier = 1;
                 light2D.pointLightOuterRadius = originalRadius;
                 polygonCollider.enabled = false;
             }

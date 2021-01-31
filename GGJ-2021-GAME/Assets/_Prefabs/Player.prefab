@@ -194,6 +194,7 @@ MonoBehaviour:
   minBattery: 0
   batteryImage: {fileID: 0}
   testMode: 0
+  intensityModifier: 1
 --- !u!114 &1136121329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDuration: 1
   skillRadiusMultiplier: 2
+  fireIntensity: 3
   flashlightSound: {fileID: 3527879341753353503}
 --- !u!60 &3214715889782679726
 PolygonCollider2D:
@@ -669,6 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashlight: {fileID: 3183465877718339736}
+  questObjectPickedUp: 0
 --- !u!114 &4218375824586223201
 MonoBehaviour:
   m_ObjectHideFlags: 0
