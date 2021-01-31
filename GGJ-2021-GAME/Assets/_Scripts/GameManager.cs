@@ -50,11 +50,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F6))
-        {
-            GameOver();
-        }
-		
 		if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
@@ -103,13 +98,13 @@ public class GameManager : MonoBehaviour
         isPaused = value;
     }
 
-    private void YouWin()
+    public void YouWin()
     {
         hasWon = true;
         levelLoader.LoadScene(GameManager.Instance.conditionScene);
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         // TODO: poner pantalla de Derrota
         hasWon = false;

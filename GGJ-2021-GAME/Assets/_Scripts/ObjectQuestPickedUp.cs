@@ -11,9 +11,11 @@ public class ObjectQuestPickedUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        PlayerController player = collision.GetComponent<PlayerController>(); 
+        if (player != null)
         {
-            GameManager.Instance.PlaySFX(pickUpSound, volume);
+            GameManager.Instance.PlaySFX(pickUpSound, volume); 
+            player.PickedObject();
             this.gameObject.SetActive(false);
         }
     }

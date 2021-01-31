@@ -5,10 +5,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Flashlight _flashlight;
-    // Start is called before the first frame update
+
+
+    public bool questObjectPickedUp;
+
     void Start()
     {
-        
+        questObjectPickedUp = false;
+    }
+
+
+    public void PickedObject()
+    {
+        questObjectPickedUp = true;
     }
 
     // Update is called once per frame
