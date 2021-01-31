@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public VictoryTrigger victoryTrigger = null;
 
     public bool hasWon = false;
+    public bool isIngame = false;
     private bool isPaused = false;
 
     private void Awake()

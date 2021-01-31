@@ -40,6 +40,7 @@ public class FinishController : MonoBehaviour
 
     public void OnClickRestart()
     {
+        GameManager.Instance.isIngame = true;
         _levelLoader.LoadScene(GameManager.Instance.gameScene);
     }
 
