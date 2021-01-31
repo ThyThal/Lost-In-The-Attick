@@ -37,7 +37,7 @@ public class FlashlightSkill : MonoBehaviour
     {
         if (!GameManager.Instance.IsPaused())
         {
-            if (Input.GetButtonDown("Fire1") && !alreadyFired)
+            if (Input.GetButtonDown("Fire1") && !alreadyFired && flashBatt.CurrentBatteryAmount()>0)
             {
                 alreadyFired = true;
                 flashlightSound.gameObject.SetActive(true);

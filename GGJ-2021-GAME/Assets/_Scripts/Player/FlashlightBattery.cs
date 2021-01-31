@@ -23,7 +23,7 @@ public class FlashlightBattery : MonoBehaviour
         }
     }
 
-    private float currentBattery = 0f;
+    private float currentBattery = 0f;    
     private bool flashlightState = true;
 
     private Light2D light2D = null;
@@ -56,6 +56,12 @@ public class FlashlightBattery : MonoBehaviour
             }
         }
     }
+
+    public float CurrentBatteryAmount()
+    {
+        return currentBattery;
+    }
+
 
     public void ModifyBattery(float batteryModify)
     {

@@ -5,6 +5,7 @@ public class SpawnObject : MonoBehaviour
     [SerializeField] private QuestItem player = null;
     [SerializeField] private GameObject[] prefabs = null;
     [SerializeField] private Transform[] spawnpoints = null;
+    [SerializeField] private FlavorFullOldMan oldManDialogue;
 
     private void Start()
     {
@@ -19,7 +20,9 @@ public class SpawnObject : MonoBehaviour
         var lengthPrefabs = prefabs.Length;
         var randomPrefab = lengthPrefabs != 0 ? prefabs[Random.Range(0, lengthPrefabs - 1)] : null;
 
-            print($"Prefab: {randomPrefab} - Spawnpoint: {randomSpawnpoint}");
+        oldManDialogue.CheckQuestItemNumberAndSprite(randomPrefab.GetComponent<ObjectQuestPickedUp>().ItemID);
+
+        print($"Prefab: {randomPrefab} - Spawnpoint: {randomSpawnpoint}");
 
         //if (randomPoint != null) go.transform.position = randomPoint.position;
         if (randomSpawnpoint != null && randomPrefab != null)

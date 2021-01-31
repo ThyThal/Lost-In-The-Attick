@@ -8,6 +8,14 @@ public class ObjectQuestPickedUp : MonoBehaviour
     [SerializeField] private float volume;
     [SerializeField] private int itemId;
 
+    public int ItemID
+    {
+        get
+        {
+            return itemId;
+        }
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,4 +27,7 @@ public class ObjectQuestPickedUp : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+
+
+
 }
