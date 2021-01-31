@@ -193,6 +193,7 @@ MonoBehaviour:
   batteryPercentaje: 0
   minBattery: 0
   batteryImage: {fileID: 0}
+  intensityModifier: 1
   testMode: 0
 --- !u!114 &1136121329
 MonoBehaviour:
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDuration: 1
   skillRadiusMultiplier: 2
+  fireIntensity: 2.5
   flashlightSound: {fileID: 3527879341753353503}
 --- !u!60 &3214715889782679726
 PolygonCollider2D:
