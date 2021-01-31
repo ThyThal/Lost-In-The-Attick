@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class PickupBattery : MonoBehaviour
 {
-    [SerializeField] private float batteryToRecover;
-
-
-
-
+    [SerializeField] private AudioClip batteryPickupSFX;
+    [SerializeField] private float volume;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +14,7 @@ public class PickupBattery : MonoBehaviour
         if (batteryScript != null)
         {
             batteryScript.ModifyBattery(batteryScript.MaxBattery);
+            GameManager.Instance.PlaySFX(batteryPickupSFX, volume);
             Destroy(gameObject);
         }
     }
