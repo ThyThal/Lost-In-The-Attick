@@ -12,6 +12,14 @@ public class FlashlightBattery : MonoBehaviour
     [SerializeField] private Image batteryImage;
     public bool testMode = true;
 
+    public float MaxBattery
+    {
+        get
+        {
+            return maxBattery;
+        }
+    }
+
     private float currentBattery = 0f;
     private bool flashlightState = true;
 
@@ -43,8 +51,7 @@ public class FlashlightBattery : MonoBehaviour
 
                     if (light2D.intensity > 0)
                     {
-                        light2D.intensity -= Time.deltaTime * decreaseLightIntensityModifier;
-                        //print(currentBattery);
+                        light2D.intensity -= Time.deltaTime * decreaseLightIntensityModifier;         
                     }
                 }
                 else if (currentBattery < 0)
@@ -62,6 +69,17 @@ public class FlashlightBattery : MonoBehaviour
         }
 
     }
+
+    public void ModifyBattery(float batteryModify)
+    {
+        currentBattery += batteryModify;
+        if (currentBattery > maxBattery) currentBattery = maxBattery;
+        else if (currentBattery < 0) currentBattery = 0;
+    }
+
+    
+   
+
 
     private void InitializeBattery()
     {
