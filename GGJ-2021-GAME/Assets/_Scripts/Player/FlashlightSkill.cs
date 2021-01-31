@@ -14,7 +14,7 @@ public class FlashlightSkill : MonoBehaviour
     private bool alreadyFired;
     [SerializeField] private float fireIntensity;
 
-
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private AudioSource flashlightSound;
 
     private PolygonCollider2D polygonCollider = null;
@@ -38,6 +38,7 @@ public class FlashlightSkill : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1") && !alreadyFired && flashBatt.CurrentBatteryAmount()>0)
             {
+                playerMovement.canMove = false;
                 alreadyFired = true;
                 flashlightSound.Play();
                 light2D.pointLightOuterRadius = originalRadius * skillRadiusMultiplier;
@@ -49,7 +50,8 @@ public class FlashlightSkill : MonoBehaviour
             }
 
             if (canCount && timer < Time.time)
-            {              
+            {
+                playerMovement.canMove = true;
                 canCount = false;
                 alreadyFired = false;
                 flashBatt.intensityModifier = 1;
@@ -61,7 +63,7 @@ public class FlashlightSkill : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") && alreadyFired)
         {
             EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
             enemyController.FleeTrigger();

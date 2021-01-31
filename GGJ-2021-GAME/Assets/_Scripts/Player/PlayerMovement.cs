@@ -2,6 +2,7 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool canMove = true;
     [SerializeField] private float velocity = 10f;
     private Rigidbody2D _rigidbody = null;
     private Animator _animator = null;
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetFloat("LookMouseX", positionDifference.x);
             _animator.SetFloat("LookMouseY", positionDifference.y);
 
-            if (moveDirection.SqrMagnitude() != 0)
+            if (moveDirection.SqrMagnitude() != 0 && canMove)
             {
                 timeToStep -= Time.deltaTime;
 
@@ -56,9 +57,6 @@ public class PlayerMovement : MonoBehaviour
                 {
                     PlayStepSound();
                 }
-
-
-
                 _animator.SetBool("IsMoving", true);
             }
             else _animator.SetBool("IsMoving", false);
@@ -67,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(Vector2 direction)
     {
+        if (!canMove) { _animator.SetBool("IsMoving", false); return; }
         var moveVelocity = direction * velocity;
         if (direction != Vector2.zero) { _rigidbody.velocity = moveVelocity; }
         else { _rigidbody.velocity = Vector2.zero; }

@@ -88,8 +88,6 @@ public class FlavorFullOldMan : MonoBehaviour
 
     private IEnumerator Dialogue()
     {
-
-        Debug.Log("Me han llamado");
         fatherAudio.Play();
 
         yield return new WaitForSeconds(1.5f);
@@ -101,10 +99,4 @@ public class FlavorFullOldMan : MonoBehaviour
         dialogueGameObject.SetActive(false);
 
     }
-
-
-
-
-
-
 }

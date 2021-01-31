@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private float _speed = 200f;
     [SerializeField] private float _nextWaypointDistance = 3f;
-    [SerializeField] private float fleeTimer = 3.5f;
+    [SerializeField] private float fleeTimer = 1.75f;
     [SerializeField] private Vector3 _spawnPosition;
 
     private bool fleed;
@@ -136,7 +136,7 @@ public class EnemyController : MonoBehaviour
     public void FleeTrigger()
     {
        if (fleed) return;
-
+        Debug.Log("Trigger Flee");
         CancelInvoke();
         isFlee = true;
         InvokeRepeating("UpdatePathFlee", 0f, 0.5f);
@@ -152,6 +152,7 @@ public class EnemyController : MonoBehaviour
         if (fleeTimer <= 0) 
         { 
             GameManager.Instance.enemiesAlive -= 1;
+            Debug.Log("Die!");
             Destroy(this.gameObject);
         }
     }

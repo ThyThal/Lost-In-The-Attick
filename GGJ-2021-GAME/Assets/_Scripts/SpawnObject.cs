@@ -22,7 +22,7 @@ public class SpawnObject : MonoBehaviour
 
         oldManDialogue.CheckQuestItemNumberAndSprite(randomPrefab.GetComponent<ObjectQuestPickedUp>().ItemID);
 
-        print($"Prefab: {randomPrefab} - Spawnpoint: {randomSpawnpoint}");
+        //print($"Prefab: {randomPrefab} - Spawnpoint: {randomSpawnpoint}");
 
         //if (randomPoint != null) go.transform.position = randomPoint.position;
         if (randomSpawnpoint != null && randomPrefab != null)

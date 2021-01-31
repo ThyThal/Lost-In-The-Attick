@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043185781
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7968270417314498494, guid: dddf42dc0e92b3748871421f2be1f9ca,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0008881092, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56, y: 0.56}
+  m_Size: {x: 0.48717833, y: 0.4818498}
   m_EdgeRadius: 0
 --- !u!114 &7545464070335222561
 MonoBehaviour:
@@ -127,12 +127,12 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000cff47378417e53fd75c02d3e89a8a1fc
+  m_ApplyToSortingLayers: 00000000cff47378a9a5aaf3417e53fdbb7e5a6f89a8a1fc75c02d3e
   m_ShapePath:
-  - {x: -0.56, y: -0.56, z: 0}
-  - {x: 0.56, y: -0.56, z: 0}
-  - {x: 0.56, y: 0.56, z: 0}
-  - {x: -0.56, y: 0.56, z: 0}
-  m_ShapePathHash: 0
+  - {x: -0.24270105, y: -0.23914865, z: 0}
+  - {x: 0.24980593, y: -0.23914859, z: 0}
+  - {x: 0.24447727, y: 0.23737252, z: 0}
+  - {x: -0.24092484, y: 0.23914862, z: 0}
+  m_ShapePathHash: 665090549
   m_Mesh: {fileID: 0}
-  m_InstanceId: -2482
+  m_InstanceId: 27898

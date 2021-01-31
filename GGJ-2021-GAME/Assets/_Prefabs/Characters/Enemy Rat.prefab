@@ -83,7 +83,7 @@ MonoBehaviour:
   _target: {fileID: 0}
   _speed: 200
   _nextWaypointDistance: 1.3
-  fleeTimer: 3.5
+  fleeTimer: 1.5
   _spawnPosition: {x: 0, y: 0, z: 0}
   clips:
   - {fileID: 8300000, guid: 413dc389264a59340b99902d6fc4113b, type: 3}
@@ -153,7 +153,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -197,7 +197,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
