@@ -10,8 +10,16 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private float _speed = 200f;
     [SerializeField] private float _nextWaypointDistance = 3f;
-    [SerializeField] private float fleeTimer = 2f;
+    [SerializeField] private float fleeTimer = 3.5f;
     [SerializeField] private Vector3 _spawnPosition;
+
+
+
+    [SerializeField] private AudioClip[] clips;
+    private AudioSource audioSrc;
+    [SerializeField] private float minSoundTriggerTime;
+    [SerializeField] private float maxSoundTriggerTime;
+    private float currentSoundTriggerTime;
 
 
     [SerializeField] private bool isFlee;
@@ -23,6 +31,7 @@ public class EnemyController : MonoBehaviour
 
     private void Awake()
     {
+        audioSrc = GetComponent<AudioSource>();
         _spawnPosition = transform.position;
         animator = GetComponentInChildren<Animator>();
         _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
@@ -76,20 +85,27 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+
+        currentSoundTriggerTime -= Time.deltaTime;
+        if (currentSoundTriggerTime <= 0)
+        {
+            PlaySFX();   
+        }
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerController>() != null)
         {
+            PlaySFX();
             FollowTrigger();
+            
         }
     } // Triggers follow Player.
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerController>() != null)
         {
-            Debug.Log("LA CONCHA DE TU VIEJA NO FUNCIONA");
             FleeTrigger();
         }
     } // Triggers flee from Player.
@@ -124,6 +140,10 @@ public class EnemyController : MonoBehaviour
         CancelInvoke();
         isFlee = true;
         InvokeRepeating("UpdatePathFlee", 0f, 0.5f);
+        _speed *= 5;
+        minSoundTriggerTime /= 7;
+        maxSoundTriggerTime /= 7;
+        PlaySFX();
     }
 
     private void FleeDeathTimer()
@@ -131,4 +151,20 @@ public class EnemyController : MonoBehaviour
         if (fleeTimer <= 0) { Destroy(this.gameObject); }
     }
 
+
+    private void GenerateNewTimeToPlaySound()
+    {
+        currentSoundTriggerTime = Random.Range(minSoundTriggerTime, maxSoundTriggerTime);
+    }
+
+    private void PlaySFX()
+    {
+        int randomClip = Random.Range(0, clips.Length - 1);
+
+        audioSrc.clip = clips[randomClip];
+
+        audioSrc.Play();
+
+        GenerateNewTimeToPlaySound();
+    }
 }
