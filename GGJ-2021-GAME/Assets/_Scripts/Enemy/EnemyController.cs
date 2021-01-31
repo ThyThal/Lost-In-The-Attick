@@ -10,35 +10,34 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private float _speed = 200f;
     [SerializeField] private float _nextWaypointDistance = 3f;
- 
+    [SerializeField] private float fleeTimer = 2f;
+    [SerializeField] private Vector3 _spawnPosition;
 
+
+    [SerializeField] private bool isFlee;
     private Path _path;
     private int _currentWaypoint = 0;
     private bool _reachedEndPath;
-    private bool followPlayer = false;
+    private bool enemyTriggered = false;
     private Animator animator = null;
 
     private void Awake()
     {
+        _spawnPosition = transform.position;
         animator = GetComponentInChildren<Animator>();
         _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.GetComponent<PlayerController>() != null)
-        {
-            FollowTrigger();
-        }
-    }
-
-
     private void Update()
     {
-        
-        if (followPlayer)
+        if (isFlee) 
         {
+            fleeTimer -= Time.deltaTime; 
+            FleeDeathTimer(); 
+        }
 
+        if (enemyTriggered)
+        {
             if (_path == null) { return; }
 
             if (_currentWaypoint >= _path.vectorPath.Count)
@@ -79,6 +78,21 @@ public class EnemyController : MonoBehaviour
         }
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<PlayerController>() != null)
+        {
+            FollowTrigger();
+        }
+    } // Triggers follow Player.
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.GetComponent<PlayerController>() != null)
+        {
+            Debug.Log("LA CONCHA DE TU VIEJA NO FUNCIONA");
+            FleeTrigger();
+        }
+    } // Triggers flee from Player.
 
     private void OnPathComplete(Path p)
     {
@@ -89,15 +103,32 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void UpdatePath()
+    private void UpdatePathPlayer()
     {
         if (_seeker.IsDone()) { _seeker.StartPath(_rigidbody.position, _target.position, OnPathComplete); }
     }
 
-    public void FollowTrigger()
+    private void UpdatePathFlee()
     {
-        followPlayer = true;
-        InvokeRepeating("UpdatePath", 0f, 0.5f);
+        if (_seeker.IsDone()) { _seeker.StartPath(_rigidbody.position, _spawnPosition, OnPathComplete); }
+    }
+
+    private void FollowTrigger()
+    {
+        enemyTriggered = true;
+        InvokeRepeating("UpdatePathPlayer", 0f, 0.5f);
+    }
+
+    public void FleeTrigger()
+    {
+        CancelInvoke();
+        isFlee = true;
+        InvokeRepeating("UpdatePathFlee", 0f, 0.5f);
+    }
+
+    private void FleeDeathTimer()
+    {
+        if (fleeTimer <= 0) { Destroy(this.gameObject); }
     }
 
 }

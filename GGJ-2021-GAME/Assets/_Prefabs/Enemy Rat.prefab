@@ -79,8 +79,10 @@ MonoBehaviour:
   _seeker: {fileID: 1006637360533581692}
   _rigidbody: {fileID: 5860812264650292070}
   _target: {fileID: 0}
-  _speed: 400
+  _speed: 200
   _nextWaypointDistance: 1.3
+  _spawnPosition: {fileID: 0}
+  isFlee: 0
 --- !u!50 &5860812264650292070
 Rigidbody2D:
   serializedVersion: 4
