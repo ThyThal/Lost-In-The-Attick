@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.UI;
 
 public class FlashlightBattery : MonoBehaviour
 {
     [SerializeField] private float maxBattery = 0f;
     [SerializeField] private float decreaseBatteryModifier = 1f;
     [SerializeField] private float decreaseLightIntensityModifier = 1f;
+    [SerializeField] private Text currentBatteryText;
+    [SerializeField] private float batteryPercentaje;
+    [SerializeField] private float minBattery;
 
     public bool testMode = true;
 
@@ -54,6 +58,8 @@ public class FlashlightBattery : MonoBehaviour
                     flashlightState = false;
                 }
             }
+            CurrentBattery();
+            Text.print(batteryPercentaje);
         }
 
     }
@@ -62,5 +68,14 @@ public class FlashlightBattery : MonoBehaviour
     {
         currentBattery = maxBattery;
         flashlightState = true;
+    }
+    private void CurrentBattery()
+    {
+        float currentOffset = currentBattery - minBattery;
+        float maximumOffset = maxBattery - minBattery;
+        batteryPercentaje = currentOffset / maximumOffset;
+
+        
+
     }
 }
