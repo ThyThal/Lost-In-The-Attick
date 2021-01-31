@@ -2,6 +2,7 @@
 
 public class SpawnObject : MonoBehaviour
 {
+    [SerializeField] private QuestItem player = null;
     [SerializeField] private GameObject[] prefabs = null;
     [SerializeField] private Transform[] spawnpoints = null;
 
@@ -24,6 +25,7 @@ public class SpawnObject : MonoBehaviour
         if (randomSpawnpoint != null && randomPrefab != null)
         {
             var clone = Instantiate(randomPrefab, randomSpawnpoint.position, Quaternion.identity);
+            player.AssignQuestObject(clone);
         }
     }
 }
