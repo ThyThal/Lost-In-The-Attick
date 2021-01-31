@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6317976597535671507}
   - component: {fileID: 8628922214996663221}
   - component: {fileID: 7169258905179651229}
+  - component: {fileID: 4838000995544203229}
   m_Layer: 0
   m_Name: MiniStair_3
   m_TagString: Untagged
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1043185781
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6729959252787305902, guid: dddf42dc0e92b3748871421f2be1f9ca,
     type: 3}
@@ -109,3 +110,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.04, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &4838000995544203229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870908175607882784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000cff47378417e53fd75c02d3e89a8a1fc
+  m_ShapePath:
+  - {x: -0.56, y: -0.56, z: 0}
+  - {x: 0.56, y: -0.56, z: 0}
+  - {x: 0.56, y: 0.56, z: 0}
+  - {x: -0.56, y: 0.56, z: 0}
+  m_ShapePathHash: 0
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -2482
