@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
     {
         AssignQuestObject();
         audioSrc = GetComponent<AudioSource>();
-        //victoryTrigger.OnVictory.AddListener(OnVictoryHandler);
     }
 
     private void Update()

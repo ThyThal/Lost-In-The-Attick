@@ -15,8 +15,9 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField] private Button buttonGoBack;
 
     [Header("Menu")]
-    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject pauseButtons;
     [SerializeField] private GameObject helpMenu;
+    [SerializeField] private GameObject background;
     [SerializeField] public CanvasGroup canvasGroup;
     [SerializeField] private Animator _animator;
 
@@ -37,9 +38,10 @@ public class PauseMenuController : MonoBehaviour
         buttonQuit.onClick.AddListener(OnClickQuit);
         buttonGoBack.onClick.AddListener(OnClickGoBack);
         buttonMainMenu.onClick.AddListener(OnClickMenu);
-        pauseMenu.SetActive(true);
+        pauseButtons.SetActive(false);
         pauseMenuActive = true;
         helpMenu.SetActive(false);
+        background.SetActive(false);
     }
 
     void Update()
@@ -68,7 +70,7 @@ public class PauseMenuController : MonoBehaviour
         if (pauseMenuActive)
         {
             pauseMenuActive = false;
-            pauseMenu.SetActive(false);
+            pauseButtons.SetActive(false);
             helpMenu.SetActive(true);
         }
     }
@@ -85,7 +87,7 @@ public class PauseMenuController : MonoBehaviour
         if (!pauseMenuActive)
         {
             pauseMenuActive = true;
-            pauseMenu.SetActive(true);
+            pauseButtons.SetActive(true);
             helpMenu.SetActive(false);
         }
     }
