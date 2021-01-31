@@ -135,7 +135,7 @@ public class EnemyController : MonoBehaviour
 
     public void FleeTrigger()
     {
-        if (fleed) return;
+       if (fleed) return;
 
         CancelInvoke();
         isFlee = true;

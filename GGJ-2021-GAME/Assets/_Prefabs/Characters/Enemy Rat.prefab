@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1162940936}
   - component: {fileID: -3171429833663233943}
   - component: {fileID: 2151549327716316017}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Enemy Rat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 1006637360980074850}
   - component: {fileID: 1006637360980074851}
   - component: {fileID: 8004138409488914261}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Enemy Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2013330066469204772}
   - component: {fileID: 2810664722285287319}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Detect Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
