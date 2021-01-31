@@ -45,16 +45,10 @@ public class GameManager : MonoBehaviour
     {
         AssignQuestObject();
         audioSrc = GetComponent<AudioSource>();
-        //victoryTrigger.OnVictory.AddListener(OnVictoryHandler);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F6))
-        {
-            GameOver();
-        }
-		
 		if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
@@ -88,12 +82,16 @@ public class GameManager : MonoBehaviour
     private void ShowPause()
     {
         pauseMenu.canvasGroup.alpha = 1;
+        pauseMenu.background.SetActive(true);
+        pauseMenu.pauseButtons.SetActive(true);
         pauseMenu.canvasGroup.interactable = true;
     }
 
     public void HidePause()
     {
         pauseMenu.canvasGroup.alpha = 0;
+        pauseMenu.background.SetActive(false);
+        pauseMenu.pauseButtons.SetActive(false);
         pauseMenu.canvasGroup.interactable = false;
     }
 
@@ -103,13 +101,13 @@ public class GameManager : MonoBehaviour
         isPaused = value;
     }
 
-    private void YouWin()
+    public void YouWin()
     {
         hasWon = true;
         levelLoader.LoadScene(GameManager.Instance.conditionScene);
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         // TODO: poner pantalla de Derrota
         hasWon = false;

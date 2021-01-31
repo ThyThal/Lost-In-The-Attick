@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float fleeTimer = 3.5f;
     [SerializeField] private Vector3 _spawnPosition;
 
+    private bool fleed;
 
 
     [SerializeField] private AudioClip[] clips;
@@ -34,7 +35,8 @@ public class EnemyController : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
         _spawnPosition = transform.position;
         animator = GetComponentInChildren<Animator>();
-        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
+        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        animator.SetBool("IsMoving", false);
     }
 
     private void Update()
@@ -80,10 +82,6 @@ public class EnemyController : MonoBehaviour
 
             float distance = Vector2.Distance(_rigidbody.position, _path.vectorPath[_currentWaypoint]);
             if (distance < _nextWaypointDistance) { _currentWaypoint++; }
-        }
-        else
-        {
-            animator.SetBool("IsMoving", false);
         }
 
         currentSoundTriggerTime -= Time.deltaTime;
@@ -137,6 +135,8 @@ public class EnemyController : MonoBehaviour
 
     public void FleeTrigger()
     {
+       if (fleed) return;
+
         CancelInvoke();
         isFlee = true;
         InvokeRepeating("UpdatePathFlee", 0f, 0.5f);
@@ -144,6 +144,7 @@ public class EnemyController : MonoBehaviour
         minSoundTriggerTime /= 7;
         maxSoundTriggerTime /= 7;
         PlaySFX();
+        fleed = true;
     }
 
     private void FleeDeathTimer()

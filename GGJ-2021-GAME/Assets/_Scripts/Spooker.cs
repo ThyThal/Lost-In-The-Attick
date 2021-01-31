@@ -2,23 +2,24 @@
 
 public class Spooker : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            var fearMeter = collision.GetComponent<FearMeter>();
 
+    FearMeter fearMeter;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {      
+        fearMeter = collision.GetComponent<FearMeter>();
+
+        if (fearMeter != null)
+        {
             fearMeter.AddNearEnemy();
         }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            var fearMeter = collision.GetComponent<FearMeter>();
+        fearMeter = collision.GetComponent<FearMeter>();
 
-            fearMeter.RemoveNearEnemy();
-        }
+        if (fearMeter != null) fearMeter.RemoveNearEnemy();
     }
 }

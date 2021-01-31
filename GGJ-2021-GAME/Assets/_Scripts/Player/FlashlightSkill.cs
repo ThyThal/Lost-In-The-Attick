@@ -12,14 +12,15 @@ public class FlashlightSkill : MonoBehaviour
     private float timer = 0f;
     private bool canCount = false;
     private bool alreadyFired;
+    [SerializeField] private float fireIntensity;
 
-    [SerializeField] private GameObject flashlightSound = null;
+
+    [SerializeField] private AudioSource flashlightSound;
 
     private PolygonCollider2D polygonCollider = null;
 
     private void Start()
-    {
-        flashlightSound.gameObject.SetActive(false);
+    {     
         flashBatt = GetComponent<FlashlightBattery>();
     }
 
@@ -35,12 +36,12 @@ public class FlashlightSkill : MonoBehaviour
     {
         if (!GameManager.Instance.IsPaused())
         {
-            if (Input.GetButtonDown("Fire1") && !alreadyFired)
+            if (Input.GetButtonDown("Fire1") && !alreadyFired && flashBatt.CurrentBatteryAmount()>0)
             {
                 alreadyFired = true;
-                flashlightSound.gameObject.SetActive(true);
-                
+                flashlightSound.Play();
                 light2D.pointLightOuterRadius = originalRadius * skillRadiusMultiplier;
+                flashBatt.intensityModifier = fireIntensity;
                 timer = Time.time + skillDuration;
                 canCount = true;
                 flashBatt.ModifyBattery(-1);
@@ -48,10 +49,10 @@ public class FlashlightSkill : MonoBehaviour
             }
 
             if (canCount && timer < Time.time)
-            {
-                flashlightSound.gameObject.SetActive(false);
+            {              
                 canCount = false;
                 alreadyFired = false;
+                flashBatt.intensityModifier = 1;
                 light2D.pointLightOuterRadius = originalRadius;
                 polygonCollider.enabled = false;
             }

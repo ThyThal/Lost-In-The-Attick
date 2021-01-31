@@ -27,8 +27,10 @@ public class MenuController : MonoBehaviour
     public void OnClickPlay() 
     {
         PlaySound(soundIn);
-        GameManager.Instance.isIngame = true;
+        GameManager.Instance.isIngame = true; 
+        GameManager.Instance.SetPause(false);
         _levelLoader.LoadScene(GameManager.Instance.gameScene);
+        
     }
     public void OnClickCredits() 
     {
