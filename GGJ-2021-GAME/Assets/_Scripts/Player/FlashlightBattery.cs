@@ -12,6 +12,8 @@ public class FlashlightBattery : MonoBehaviour
     [SerializeField] private Image batteryImage;
     public bool testMode = true;
 
+    public float intensityModifier = 1;
+
     public float MaxBattery
     {
         get
@@ -21,9 +23,8 @@ public class FlashlightBattery : MonoBehaviour
     }
 
     private float currentBattery = 0f;
-    private bool flashlightState = true;
 
-    private Light2D light2D = null;
+    private Light2D light2D;
 
     private void Awake()
     {
@@ -54,7 +55,7 @@ public class FlashlightBattery : MonoBehaviour
     {
         currentBattery += batteryModify;
         CurrentBattery();
-        light2D.intensity = batteryPercentaje;
+        light2D.intensity = batteryPercentaje * intensityModifier;
         if (currentBattery > maxBattery) currentBattery = maxBattery;
         else if (currentBattery < 0) currentBattery = 0;
     }
