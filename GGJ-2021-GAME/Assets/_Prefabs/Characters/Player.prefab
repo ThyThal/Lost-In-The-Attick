@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 4218375824270037354}
   - component: {fileID: 1119705392}
   - component: {fileID: 762270399667037780}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00052911043}
+  m_Offset: {x: 0, y: -0.1881181}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -565,7 +565,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.79894173}
+  m_Size: {x: 0.64, y: 0.4216473}
   m_EdgeRadius: 0
 --- !u!1 &4218375824586223200
 GameObject:
@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 360928427}
   - component: {fileID: 6895941462870243086}
   - component: {fileID: 360928428}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -669,6 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashlight: {fileID: 3183465877718339736}
+  questObjectPickedUp: 0
 --- !u!114 &4218375824586223201
 MonoBehaviour:
   m_ObjectHideFlags: 0
