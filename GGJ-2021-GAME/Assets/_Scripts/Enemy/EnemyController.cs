@@ -149,7 +149,11 @@ public class EnemyController : MonoBehaviour
 
     private void FleeDeathTimer()
     {
-        if (fleeTimer <= 0) { Destroy(this.gameObject); }
+        if (fleeTimer <= 0) 
+        { 
+            GameManager.Instance.enemiesAlive -= 1;
+            Destroy(this.gameObject);
+        }
     }
 
 

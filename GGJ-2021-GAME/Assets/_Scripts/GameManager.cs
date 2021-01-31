@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public PauseMenuController pauseMenu;
 
     private AudioSource audioSrc;
+    public int enemiesAlive = 0;
     
 
     public static GameManager Instance;

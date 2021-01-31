@@ -25,12 +25,23 @@ public class LevelController : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        if (GameManager.Instance.enemiesAlive <= 1)
+        {
+            _freeSpawnpoints = _originalSpawnpoints;
+            _usedSpawnpoints.Clear();
+            _startEnemies = 3;
+            SpawnEnemies();
+        }
+    }
+
     private void SpawnEnemies()
     {
         for (int i = 0; i < _startEnemies; i++)
         {
             Instantiate(ChooseEnemy(), ChooseSpawn());
-
+            GameManager.Instance.enemiesAlive += 1;
         }
     }
 
