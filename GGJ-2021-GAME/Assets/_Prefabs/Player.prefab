@@ -43,7 +43,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 5483983223603611367, guid: 043155dcb530c4842b33c8b2015f42b3,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 1465b3ec766b9f44281a298219b3665b, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0.05
-  m_ApplyToSortingLayers: 00000000cff4737875c02d3ea9a5aaf3bb7e5a6f
+  m_ApplyToSortingLayers: 00000000cff4737875c02d3ea9a5aaf3
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -645,6 +645,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 5
+  step1: {fileID: 8300000, guid: de4de9e34200ac545a894f4705c7f70a, type: 3}
+  step2: {fileID: 8300000, guid: fd0fb856639f7304888ebb098062c175, type: 3}
+  step3: {fileID: 8300000, guid: 77fa3bb1140794a43ba0e102197322bb, type: 3}
+  timeToStepStart: 0.2
 --- !u!114 &1369270156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +665,7 @@ MonoBehaviour:
   fearDecreaseModifier: 1
   fearIncreaseModifier: 1
   _fearMask: {fileID: 0}
-  _color: {r: 0.5283019, g: 0.12210752, b: 0.43627852, a: 1}
+  _color: {r: 0, g: 0, b: 0, a: 0}
   fearAmount: 0
   nearEnemys: 0
   OnFrightened:
