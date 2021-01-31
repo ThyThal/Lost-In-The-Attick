@@ -57,8 +57,8 @@ public class PauseMenuController : MonoBehaviour
     }
 
     public void OnClickResume() 
-    { 
-        GameManager.Instance.SetPause(false);
+    {
+        GameManager.Instance.PauseGame();
         GameManager.Instance.HidePause();
     }
 

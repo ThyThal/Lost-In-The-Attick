@@ -6,6 +6,7 @@ public class ObjectQuestPickedUp : MonoBehaviour
 {
     [SerializeField] private AudioClip pickUpSound;
     [SerializeField] private float volume;
+    [SerializeField] private int itemId;
 
 
     private void OnTriggerEnter2D(Collider2D collision)

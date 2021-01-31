@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private float _speed = 200f;
     [SerializeField] private float _nextWaypointDistance = 3f;
+ 
 
     private Path _path;
     private int _currentWaypoint = 0;
@@ -20,7 +21,7 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,8 +36,6 @@ public class EnemyController : MonoBehaviour
     private void Update()
     {
         
-
-
         if (followPlayer)
         {
 
@@ -57,6 +56,18 @@ public class EnemyController : MonoBehaviour
 
             Vector2 direction = ((Vector2)_path.vectorPath[_currentWaypoint] - _rigidbody.position).normalized;
             Vector2 force = direction * _speed * Time.deltaTime;
+
+            //La shata te mira
+            if (force.x > 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+
+            if (force.x < 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+
             _rigidbody.AddForce(force);
 
             float distance = Vector2.Distance(_rigidbody.position, _path.vectorPath[_currentWaypoint]);
@@ -66,6 +77,7 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+        
     }
 
     private void OnPathComplete(Path p)
@@ -88,8 +100,4 @@ public class EnemyController : MonoBehaviour
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
 
-    private void DestroyEnemy()
-    {
-
-    }
 }
