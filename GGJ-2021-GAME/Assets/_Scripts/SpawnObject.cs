@@ -2,19 +2,28 @@
 
 public class SpawnObject : MonoBehaviour
 {
-    [SerializeField] private GameObject prefab = null;
+    [SerializeField] private GameObject[] prefabs = null;
     [SerializeField] private Transform[] spawnpoints = null;
 
     private void Start()
     {
-        if (prefab != null) Spawn(prefab);
+        Spawn();
     }
 
-    public void Spawn(GameObject go)
+    public void Spawn()
     {
-        var length = spawnpoints.Length;
-        var randomPoint = length != 0 ? spawnpoints[Random.Range(0, length - 1)] : null;
+        var lengthSpawnpoints = spawnpoints.Length;
+        var randomSpawnpoint = lengthSpawnpoints != 0 ? spawnpoints[Random.Range(0, lengthSpawnpoints - 1)] : null;
 
-        if (randomPoint != null) go.transform.position = randomPoint.position;
+        var lengthPrefabs = prefabs.Length;
+        var randomPrefab = lengthPrefabs != 0 ? prefabs[Random.Range(0, lengthPrefabs - 1)] : null;
+
+            print($"Prefab: {randomPrefab} - Spawnpoint: {randomSpawnpoint}");
+
+        //if (randomPoint != null) go.transform.position = randomPoint.position;
+        if (randomSpawnpoint != null && randomPrefab != null)
+        {
+            var clone = Instantiate(randomPrefab, randomSpawnpoint.position, Quaternion.identity);
+        }
     }
 }
