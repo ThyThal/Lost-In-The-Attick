@@ -40,58 +40,34 @@ public class FlashlightBattery : MonoBehaviour
         if (!testMode)
         {
             if (!GameManager.Instance.IsPaused())
-            {
-                if (currentBattery > (maxBattery / 4))
+            {          
+                if (currentBattery > 0)
                 {
-                    currentBattery -= Time.deltaTime * decreaseBatteryModifier;
+                    ModifyBattery(-Time.deltaTime * decreaseBatteryModifier);
                 }
-                else if (currentBattery < (maxBattery / 4) && currentBattery > 0)
-                {
-                    currentBattery -= Time.deltaTime * decreaseBatteryModifier;
-
-                    if (light2D.intensity > 0)
-                    {
-                        light2D.intensity -= Time.deltaTime * decreaseLightIntensityModifier;         
-                    }
-                }
-                else if (currentBattery < 0)
-                {
-                    currentBattery = 0;
-                }
-                else if (currentBattery == 0 && flashlightState)
-                {
-                    light2D.intensity = 0f;
-                    flashlightState = false;
-                }
+                batteryImage.fillAmount = batteryPercentaje;
             }
-            CurrentBattery();
-            batteryImage.fillAmount = batteryPercentaje;
         }
-
     }
 
     public void ModifyBattery(float batteryModify)
     {
         currentBattery += batteryModify;
+        CurrentBattery();
+        light2D.intensity = batteryPercentaje;
         if (currentBattery > maxBattery) currentBattery = maxBattery;
         else if (currentBattery < 0) currentBattery = 0;
     }
-
-    
-   
 
 
     private void InitializeBattery()
     {
         currentBattery = maxBattery;
-        flashlightState = true;
     }
     private void CurrentBattery()
     {
         float maximumOffset = maxBattery - minBattery;
         batteryPercentaje = currentBattery / maximumOffset;
-
-        
-
+        if (batteryPercentaje < 0) batteryPercentaje = 0;
     }
 }

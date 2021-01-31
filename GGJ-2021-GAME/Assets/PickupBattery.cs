@@ -14,13 +14,10 @@ public class PickupBattery : MonoBehaviour
     {
         FlashlightBattery batteryScript = collision.GetComponentInChildren<FlashlightBattery>();
 
-
         if (batteryScript != null)
         {
             batteryScript.ModifyBattery(batteryScript.MaxBattery);
             Destroy(gameObject);
-
-
         }
     }
 
