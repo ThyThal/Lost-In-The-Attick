@@ -82,12 +82,16 @@ public class GameManager : MonoBehaviour
     private void ShowPause()
     {
         pauseMenu.canvasGroup.alpha = 1;
+        pauseMenu.background.SetActive(true);
+        pauseMenu.pauseButtons.SetActive(true);
         pauseMenu.canvasGroup.interactable = true;
     }
 
     public void HidePause()
     {
         pauseMenu.canvasGroup.alpha = 0;
+        pauseMenu.background.SetActive(false);
+        pauseMenu.pauseButtons.SetActive(false);
         pauseMenu.canvasGroup.interactable = false;
     }
 

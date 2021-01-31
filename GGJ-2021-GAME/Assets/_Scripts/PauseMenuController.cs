@@ -15,9 +15,9 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField] private Button buttonGoBack;
 
     [Header("Menu")]
-    [SerializeField] private GameObject pauseButtons;
-    [SerializeField] private GameObject helpMenu;
-    [SerializeField] private GameObject background;
+    [SerializeField] public GameObject pauseButtons;
+    [SerializeField] public GameObject helpMenu;
+    [SerializeField] public GameObject background;
     [SerializeField] public CanvasGroup canvasGroup;
     [SerializeField] private Animator _animator;
 
