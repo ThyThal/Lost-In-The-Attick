@@ -189,7 +189,10 @@ MonoBehaviour:
   maxBattery: 10
   decreaseBatteryModifier: 1
   decreaseLightIntensityModifier: 1
-  testMode: 1
+  batteryPercentaje: 0
+  minBattery: 0
+  batteryImage: {fileID: 0}
+  testMode: 0
 --- !u!114 &1136121329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,7 +668,7 @@ MonoBehaviour:
   fearDecreaseModifier: 1
   fearIncreaseModifier: 1
   _fearMask: {fileID: 0}
-  _color: {r: 0, g: 0, b: 0, a: 0}
+  _color: {r: 0.40467137, g: 0.06852971, b: 0.41509432, a: 1}
   fearAmount: 0
   nearEnemys: 0
   OnFrightened:
