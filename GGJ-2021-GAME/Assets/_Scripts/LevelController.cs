@@ -5,9 +5,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] private int _startEnemies = 5;
-    [SerializeField] private List<Transform> _originalSpawnpoints;
-    private List<Transform> _freeSpawnpoints = new List<Transform>();
-    private List<Transform> _usedSpawnpoints;
+    [SerializeField] private List<Transform> _originalSpawnpoints;   
     private Transform _spawnLocation;
 
     [SerializeField] private GameObject _enemyRat;
@@ -18,10 +16,13 @@ public class LevelController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        _usedSpawnpoints = new List<Transform>();
-        _freeSpawnpoints = _originalSpawnpoints;
-        if (_startEnemies > 0) { SpawnEnemies(); }
+    {      
+        if (_startEnemies > 0)
+        { 
+            SpawnEnemies();
+        }
+
+        GameManager.Instance.AssignLevelController(this);
         
     }
 
@@ -29,14 +30,12 @@ public class LevelController : MonoBehaviour
     {
         if (GameManager.Instance.enemiesAlive <= 1)
         {
-            _freeSpawnpoints = _originalSpawnpoints;
-            _usedSpawnpoints.Clear();
             _startEnemies = 3;
             SpawnEnemies();
         }
     }
 
-    private void SpawnEnemies()
+    public void SpawnEnemies()
     {
         for (int i = 0; i < _startEnemies; i++)
         {
@@ -56,15 +55,7 @@ public class LevelController : MonoBehaviour
 
     private Transform ChooseSpawn()
     {
-        _spawnLocation = _freeSpawnpoints[Random.Range(0, _freeSpawnpoints.Count)];
-
-        if (_usedSpawnpoints.Contains(_spawnLocation))
-        {
-            ChooseSpawn();
-        }
-
-        _freeSpawnpoints.Remove(_spawnLocation);
-        _usedSpawnpoints.Add(_spawnLocation);
+        _spawnLocation = _originalSpawnpoints[Random.Range(0, _originalSpawnpoints.Count)];
         return _spawnLocation;
     }
 }

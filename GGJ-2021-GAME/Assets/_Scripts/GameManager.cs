@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     private AudioSource audioSrc;
     public int enemiesAlive = 0;
+
+    public LevelController levelCont;
     
 
     public static GameManager Instance;
@@ -57,6 +59,10 @@ public class GameManager : MonoBehaviour
     
     }
 	
+    public void AssignLevelController (LevelController lc)
+    {
+        this.levelCont = lc;
+    }
     public void PauseGame ()
     {
         if (!isPaused)
@@ -142,6 +148,16 @@ public class GameManager : MonoBehaviour
         audioSrc.clip = clipToPlay;
         audioSrc.volume = volume;
         audioSrc.Play();
+    }
+
+    public void ModifySpawnedEnemies (int enemiesModified)
+    {
+        enemiesAlive += enemiesModified;
+
+        if (enemiesAlive <= 0)
+        {
+            levelCont.SpawnEnemies();
+        }
     }
 
 }
