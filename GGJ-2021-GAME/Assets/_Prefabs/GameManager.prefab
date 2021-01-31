@@ -44,12 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142ea141151ea0f4590df49fb5738200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuScene: Main Menu
-  gameScene: Main Game
+  menuScene: Menu Scene
+  gameScene: Game Scene
+  conditionScene: Condition Scene
   levelLoader: {fileID: 0}
   pauseMenu: {fileID: 0}
   gameObjects: []
   victoryTrigger: {fileID: 0}
+  hasWon: 0
 --- !u!82 &1880764452186428394
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 5483983223603611367, guid: 043155dcb530c4842b33c8b2015f42b3,
     type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 0

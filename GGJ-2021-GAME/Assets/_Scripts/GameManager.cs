@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public string menuScene = "Main Menu";
     [SerializeField] public string gameScene = "Main Game";
     [SerializeField] public string conditionScene = "Condition";
+   
 
     [SerializeField] public LevelLoader levelLoader;
     [SerializeField] public PauseMenuController pauseMenu;
@@ -114,6 +115,10 @@ public class GameManager : MonoBehaviour
         levelLoader.LoadScene(GameManager.Instance.conditionScene);
     }
 
+    public void LoadMenu()
+    {
+        levelLoader.LoadScene(menuScene);
+    }
     public void AssignQuestObject()
     {
         var length = gameObjects.Length;

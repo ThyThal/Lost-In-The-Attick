@@ -8,7 +8,7 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private float _transitionTime = 1f;
 
-    private void Awake()
+    private void Start()
     {
         GameManager.Instance.levelLoader = this;
     }
@@ -17,6 +17,7 @@ public class LevelLoader : MonoBehaviour
     {
         StartCoroutine(LoadLevel(sceneName));
     }
+
 
     private IEnumerator LoadLevel(string sceneName)
     {

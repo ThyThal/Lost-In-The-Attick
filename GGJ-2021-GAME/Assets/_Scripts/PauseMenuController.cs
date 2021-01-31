@@ -20,12 +20,14 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField] public CanvasGroup canvasGroup;
     [SerializeField] private Animator _animator;
 
+   
+
     //Extras
     private bool pauseMenuActive;
 
     private void Awake()
     {
-        GameManager.Instance.pauseMenu = this;
+        GameManager.Instance.pauseMenu = this;        
     }
 
     void Start()
@@ -73,7 +75,9 @@ public class PauseMenuController : MonoBehaviour
 
     public void OnClickMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1;
+        //GameManager.Instance.levelLoader.LoadScene("Menu Scene");
+        SceneManager.LoadScene("Menu Scene");
     }
 
     public void OnClickGoBack() 
