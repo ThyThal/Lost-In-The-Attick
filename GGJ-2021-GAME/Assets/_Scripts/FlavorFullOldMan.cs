@@ -12,12 +12,20 @@ public class FlavorFullOldMan : MonoBehaviour
     [SerializeField] private AudioSource fatherAudio;
     [SerializeField] private AudioSource childAudio;
 
+    [SerializeField] private GameObject dialogueGameObject;
+
     [SerializeField] private Image itemImage;
+    [SerializeField] private Text eltepsto;
 
     [SerializeField] private Sprite golfClub;
     [SerializeField] private Sprite michiBag;
     [SerializeField] private Sprite mermidor;
     [SerializeField] private Sprite screwdriver;
+
+    [SerializeField] private string item1Dialogue;
+    [SerializeField] private string item2Dialogue;
+    [SerializeField] private string item3Dialogue;
+    [SerializeField] private string item4Dialogue;
    
   
 
@@ -34,21 +42,26 @@ public class FlavorFullOldMan : MonoBehaviour
         {
             case 1:
                 itemImage.sprite = golfClub;
+                eltepsto.text = item1Dialogue;
                 break;
             case 2:
                 itemImage.sprite = michiBag;
+                eltepsto.text = item2Dialogue;
                 break;
             case 3:
                 itemImage.sprite = mermidor;
+                eltepsto.text = item3Dialogue;
                 break;
             case 4:
                 itemImage.sprite = screwdriver;
+                eltepsto.text = item4Dialogue;
                 break;
 
             default:
                 break;
         }
     }
+
     public void TriggerDialogue()
     {
 
@@ -75,11 +88,18 @@ public class FlavorFullOldMan : MonoBehaviour
 
     private IEnumerator Dialogue()
     {
+
+        Debug.Log("Me han llamado");
         fatherAudio.Play();
 
         yield return new WaitForSeconds(1.5f);
 
         childAudio.Play();
+
+        yield return new WaitForSeconds(2);
+
+        dialogueGameObject.SetActive(false);
+
     }
 
 

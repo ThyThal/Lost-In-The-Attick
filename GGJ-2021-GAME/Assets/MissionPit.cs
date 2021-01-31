@@ -19,6 +19,8 @@ public class MissionPit : MonoBehaviour
                 return;
             }
             dialogueFather.SetActive(true);
+            dialogueFather.GetComponent<FlavorFullOldMan>().TriggerDialogue();
+           
         }
     }
 }

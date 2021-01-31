@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float fleeTimer = 3.5f;
     [SerializeField] private Vector3 _spawnPosition;
 
+    private bool fleed;
 
 
     [SerializeField] private AudioClip[] clips;
@@ -134,6 +135,8 @@ public class EnemyController : MonoBehaviour
 
     public void FleeTrigger()
     {
+        if (fleed) return;
+
         CancelInvoke();
         isFlee = true;
         InvokeRepeating("UpdatePathFlee", 0f, 0.5f);
@@ -141,6 +144,7 @@ public class EnemyController : MonoBehaviour
         minSoundTriggerTime /= 7;
         maxSoundTriggerTime /= 7;
         PlaySFX();
+        fleed = true;
     }
 
     private void FleeDeathTimer()
