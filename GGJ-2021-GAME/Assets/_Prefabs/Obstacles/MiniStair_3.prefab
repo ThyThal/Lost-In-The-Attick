@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8628922214996663221}
   - component: {fileID: 7169258905179651229}
   - component: {fileID: 4838000995544203229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiniStair_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
