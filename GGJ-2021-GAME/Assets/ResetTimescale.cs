@@ -9,7 +9,10 @@ public class ResetTimescale : MonoBehaviour
         if (GameManager.Instance.isIngame)
         {
             Time.timeScale = 1;
-            GameManager.Instance.PauseGame();
+            if (GameManager.Instance.IsPaused())
+            {
+                GameManager.Instance.PauseGame();
+            }
             GameManager.Instance.isIngame = false;
         }
     }
