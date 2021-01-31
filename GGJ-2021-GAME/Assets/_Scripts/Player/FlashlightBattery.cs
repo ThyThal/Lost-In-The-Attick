@@ -7,10 +7,9 @@ public class FlashlightBattery : MonoBehaviour
     [SerializeField] private float maxBattery = 0f;
     [SerializeField] private float decreaseBatteryModifier = 1f;
     [SerializeField] private float decreaseLightIntensityModifier = 1f;
-    [SerializeField] private Text currentBatteryText;
     [SerializeField] private float batteryPercentaje;
     [SerializeField] private float minBattery;
-
+    [SerializeField] private Image batteryImage;
     public bool testMode = true;
 
     private float currentBattery = 0f;
@@ -59,7 +58,7 @@ public class FlashlightBattery : MonoBehaviour
                 }
             }
             CurrentBattery();
-            Text.print(batteryPercentaje);
+            batteryImage.fillAmount = batteryPercentaje;
         }
 
     }
@@ -71,9 +70,8 @@ public class FlashlightBattery : MonoBehaviour
     }
     private void CurrentBattery()
     {
-        float currentOffset = currentBattery - minBattery;
         float maximumOffset = maxBattery - minBattery;
-        batteryPercentaje = currentOffset / maximumOffset;
+        batteryPercentaje = currentBattery / maximumOffset;
 
         
 
