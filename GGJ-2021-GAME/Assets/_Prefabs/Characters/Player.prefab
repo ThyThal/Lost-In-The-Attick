@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c7897cff6eba843ae506857963cb93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBattery: 25
+  maxBattery: 45
   decreaseBatteryModifier: 1
   decreaseLightIntensityModifier: 1
   batteryPercentaje: 0

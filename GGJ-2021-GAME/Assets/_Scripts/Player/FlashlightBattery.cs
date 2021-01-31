@@ -48,6 +48,10 @@ public class FlashlightBattery : MonoBehaviour
                 {
                     ModifyBattery(-Time.deltaTime * decreaseBatteryModifier);
                 }
+
+                Debug.Log($"Fill amount is {batteryImage.fillAmount}");
+
+
                 batteryImage.fillAmount = batteryPercentaje;
             }
         }
