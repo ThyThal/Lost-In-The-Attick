@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [Header("Scene Names")]
     [SerializeField] public string menuScene = "Main Menu";
     [SerializeField] public string gameScene = "Main Game";
+    [SerializeField] public string conditionScene = "Condition";
 
     [SerializeField] public LevelLoader levelLoader;
     [SerializeField] public PauseMenuController pauseMenu;
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     public VictoryTrigger victoryTrigger = null;
 
+    public bool hasWon = false;
     private bool isPaused = false;
 
     private void Awake()
@@ -98,10 +100,17 @@ public class GameManager : MonoBehaviour
         isPaused = value;
     }
 
+    private void YouWin()
+    {
+        hasWon = true;
+        levelLoader.LoadScene(GameManager.Instance.conditionScene);
+    }
+
     private void GameOver()
     {
         // TODO: poner pantalla de Derrota
-        levelLoader.LoadScene(GameManager.Instance.menuScene);
+        hasWon = false;
+        levelLoader.LoadScene(GameManager.Instance.conditionScene);
     }
 
     public void AssignQuestObject()
