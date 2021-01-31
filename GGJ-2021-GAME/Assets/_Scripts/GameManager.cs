@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public LevelLoader levelLoader;
     [SerializeField] public PauseMenuController pauseMenu;
 
+    private AudioSource audioSrc;
     
 
     public static GameManager Instance;
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         AssignQuestObject();
+        audioSrc = GetComponent<AudioSource>();
         //victoryTrigger.OnVictory.AddListener(OnVictoryHandler);
     }
 
@@ -102,4 +104,13 @@ public class GameManager : MonoBehaviour
         print("Ganaste");
         // TODO: poner pantalla de Victoria
     }
+
+
+    public void PlaySFX (AudioClip clipToPlay, float volume)
+    {
+        audioSrc.clip = clipToPlay;
+        audioSrc.volume = volume;
+        audioSrc.Play();
+    }
+
 }

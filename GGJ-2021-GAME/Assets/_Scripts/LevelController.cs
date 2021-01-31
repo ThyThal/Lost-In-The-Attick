@@ -13,6 +13,9 @@ public class LevelController : MonoBehaviour
     [SerializeField] private GameObject _enemyRat;
     [SerializeField] private GameObject _enemyBat;
     [SerializeField] private GameObject _enemyGhost;
+
+
+
     // Start is called before the first frame update
     void Start()
     {

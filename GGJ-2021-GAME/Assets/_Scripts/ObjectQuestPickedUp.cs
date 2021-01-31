@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class ObjectQuestPickedUp : MonoBehaviour
 {
-    [SerializeField] 
-    private GameObject pickUpSound = null;
+    [SerializeField] private AudioClip pickUpSound;
+    [SerializeField] private float volume;
 
-    private void Start()
-    {
-        pickUpSound.gameObject.SetActive(false);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            pickUpSound.gameObject.SetActive(true);
+            GameManager.Instance.PlaySFX(pickUpSound, volume);
             this.gameObject.SetActive(false);
         }
     }
