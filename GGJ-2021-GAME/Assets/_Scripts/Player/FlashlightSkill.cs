@@ -15,6 +15,8 @@ public class FlashlightSkill : MonoBehaviour
 
     [SerializeField] private GameObject flashlightSound = null;
 
+    private PolygonCollider2D polygonCollider = null;
+
     private void Start()
     {
         flashlightSound.gameObject.SetActive(false);
@@ -25,6 +27,8 @@ public class FlashlightSkill : MonoBehaviour
     {
         light2D = GetComponentInChildren<Light2D>();
         originalRadius = light2D.pointLightOuterRadius;
+
+        polygonCollider = GetComponent<PolygonCollider2D>();
     }
 
     private void Update()
@@ -40,6 +44,7 @@ public class FlashlightSkill : MonoBehaviour
                 timer = Time.time + skillDuration;
                 canCount = true;
                 flashBatt.ModifyBattery(-1);
+                polygonCollider.enabled = true;
             }
 
             if (canCount && timer < Time.time)
@@ -48,7 +53,17 @@ public class FlashlightSkill : MonoBehaviour
                 canCount = false;
                 alreadyFired = false;
                 light2D.pointLightOuterRadius = originalRadius;
+                polygonCollider.enabled = false;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
+            enemyController.FleeTrigger();
         }
     }
 }
