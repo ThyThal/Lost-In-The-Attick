@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 8f843a2f04239df43ac2ed7a93b5fa89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 558395519432862803
+    second: Player movement Con linterna Sprite Sheet_0
+  - first:
+      213: -7850613881505150059
+    second: Player movement Con linterna Sprite Sheet_1
+  - first:
+      213: 1552824032531610638
+    second: Player movement Con linterna Sprite Sheet_2
+  - first:
+      213: 4453008235550303053
+    second: Player movement Con linterna Sprite Sheet_3
+  - first:
+      213: 2812773612545452916
+    second: Player movement Con linterna Sprite Sheet_4
+  - first:
+      213: -6563723249922616775
+    second: Player movement Con linterna Sprite Sheet_5
+  - first:
+      213: -908665361557983024
+    second: Player movement Con linterna Sprite Sheet_6
+  - first:
+      213: 3926775765476193814
+    second: Player movement Con linterna Sprite Sheet_7
+  - first:
+      213: -4054183974094246895
+    second: Player movement Con linterna Sprite Sheet_8
+  - first:
+      213: -1232172995536778582
+    second: Player movement Con linterna Sprite Sheet_9
+  - first:
+      213: 6781070895072761474
+    second: Player movement Con linterna Sprite Sheet_10
+  - first:
+      213: -33282722659524048
+    second: Player movement Con linterna Sprite Sheet_11
+  - first:
+      213: 7004286443491240992
+    second: Player movement Con linterna Sprite Sheet_12
+  - first:
+      213: 3098363550035124278
+    second: Player movement Con linterna Sprite Sheet_13
+  - first:
+      213: -8070217754468869568
+    second: Player movement Con linterna Sprite Sheet_14
+  - first:
+      213: 93810416985721003
+    second: Player movement Con linterna Sprite Sheet_15
+  - first:
+      213: 7929196400335987082
+    second: Player movement Con linterna Sprite Sheet_16
+  - first:
+      213: 6521153532922284751
+    second: Player movement Con linterna Sprite Sheet_17
+  - first:
+      213: -4682273283813550947
+    second: Player movement Con linterna Sprite Sheet_18
+  - first:
+      213: 5205828336182608660
+    second: Player movement Con linterna Sprite Sheet_19
+  - first:
+      213: -5738058385248836136
+    second: Player movement Con linterna Sprite Sheet_20
+  - first:
+      213: -530534621888527648
+    second: Player movement Con linterna Sprite Sheet_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c27f334c1dfb700800000000000000
+      internalID: 558395519432862803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b8224e4440d0390800000000000000
+      internalID: -7850613881505150059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c7cb9fa3dbc8510800000000000000
+      internalID: 1552824032531610638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d436ddda5634ccd30800000000000000
+      internalID: 4453008235550303053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b2d59a2baf80720800000000000000
+      internalID: 2812773612545452916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932d364fa78f8e4a0800000000000000
+      internalID: -6563723249922616775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d072a00ba5c363f0800000000000000
+      internalID: -908665361557983024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61632d5f0c5be7630800000000000000
+      internalID: 3926775765476193814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ce702d725acb7c0800000000000000
+      internalID: -4054183974094246895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa833b503176eee0800000000000000
+      internalID: -1232172995536778582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2865d892d043b1e50800000000000000
+      internalID: 6781070895072761474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032a8b24a81c98ff0800000000000000
+      internalID: -33282722659524048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c2169f869343160800000000000000
+      internalID: 7004286443491240992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630acd0ab399ffa20800000000000000
+      internalID: 3098363550035124278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a15dcc5b3d00090800000000000000
+      internalID: -8070217754468869568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba84aa4c3184d4100800000000000000
+      internalID: 93810416985721003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81255c8d1a2a0e60800000000000000
+      internalID: 7929196400335987082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcacd9f669acf7a50800000000000000
+      internalID: 6521153532922284751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 0
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94ddf09149350fb0800000000000000
+      internalID: -4682273283813550947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413c3d34a41de3840800000000000000
+      internalID: 5205828336182608660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5aac6dc425e50b0800000000000000
+      internalID: -5738058385248836136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player movement Con linterna Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2c941829923a8f0800000000000000
+      internalID: -530534621888527648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

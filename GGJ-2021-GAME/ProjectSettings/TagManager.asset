@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GameManager
+  - Obstacles
+  - Level Loader
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,15 +17,15 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Obstacles
+  - PlayerFeet
+  - Walls
+  - Triggers
+  - WEASRARAS
+  - Bats
+  - Rats
+  - Ghost
   - 
   - 
   - 
@@ -40,4 +44,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2020865231
+    locked: 0
+  - name: Walls
+    uniqueID: 4088047017
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1043185781
+    locked: 0
+  - name: Player
+    uniqueID: 4250107457
+    locked: 0
+  - name: Enemy
+    uniqueID: 1868201659
+    locked: 0
+  - name: UI
+    uniqueID: 4238452873
     locked: 0
