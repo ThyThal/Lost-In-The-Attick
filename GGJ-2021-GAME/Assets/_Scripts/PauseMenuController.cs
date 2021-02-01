@@ -28,11 +28,12 @@ public class PauseMenuController : MonoBehaviour
 
     private void Awake()
     {
-        GameManager.Instance.pauseMenu = this;        
+        //GameManager.Instance.pauseMenu = this;        
     }
 
     void Start()
-    {        
+    {
+        GameManager.Instance.pauseMenu = this;
         buttonResume.onClick.AddListener(OnClickResume);
         buttonHelp.onClick.AddListener(OnClickHelp);
         buttonQuit.onClick.AddListener(OnClickQuit);

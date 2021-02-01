@@ -5,68 +5,91 @@ public class FlashlightSkill : MonoBehaviour
 {
     [SerializeField] private float skillDuration = 0f;
     [SerializeField] private float skillRadiusMultiplier = 1f;
-    private FlashlightBattery flashBatt;
+    [SerializeField] private float _lerpSpeed = 10f;
+    private FlashlightBattery flashlightBattery;
 
     private Light2D light2D = null;
-    private float originalRadius = 0f;
-    private float timer = 0f;
-    private bool canCount = false;
-    private bool alreadyFired;
-    [SerializeField] private float fireIntensity;
+    private float originalOuterRadius = 0f;
+    private float attackCooldown = 0f;
+    private bool hasFired = false;
+    [SerializeField] private float attackIntensity = 2.5f;
 
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private AudioSource flashlightSound;
 
-    private PolygonCollider2D polygonCollider = null;
+    private PolygonCollider2D attackCollider = null;
 
     private void Start()
     {     
-        flashBatt = GetComponent<FlashlightBattery>();
+        flashlightBattery = GetComponent<FlashlightBattery>();
     }
 
     private void Awake()
     {
         light2D = GetComponentInChildren<Light2D>();
-        originalRadius = light2D.pointLightOuterRadius;
+        originalOuterRadius = light2D.pointLightOuterRadius;
 
-        polygonCollider = GetComponent<PolygonCollider2D>();
+        attackCollider = GetComponent<PolygonCollider2D>();
     }
 
     private void Update()
     {
         if (!GameManager.Instance.IsPaused())
         {
-            if (Input.GetButtonDown("Fire1") && !alreadyFired && flashBatt.CurrentBatteryAmount()>0)
+            if (Input.GetButtonDown("Fire1") && !hasFired && flashlightBattery.CurrentBatteryAmount()>0)
             {
-                playerMovement.canMove = false;
-                alreadyFired = true;
-                flashlightSound.Play();
-                light2D.pointLightOuterRadius = originalRadius * skillRadiusMultiplier;
-                flashBatt.intensityModifier = fireIntensity;
-                timer = Time.time + skillDuration;
-                canCount = true;
-                flashBatt.ModifyBattery(-1);
-                polygonCollider.enabled = true;
+                Attack();   
             }
 
-            if (canCount && timer < Time.time)
+            if (hasFired && attackCooldown < Time.time)
             {
-                playerMovement.canMove = true;
-                canCount = false;
-                alreadyFired = false;
-                flashBatt.intensityModifier = 1;
-                light2D.pointLightOuterRadius = originalRadius;
-                polygonCollider.enabled = false;
+                ResetAttack();
+            }
+            
+            if (!hasFired)
+            {
+                UpdateLerp();
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && alreadyFired)
+        if (collision.CompareTag("Enemy") && hasFired)
         {
             EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
             enemyController.FleeTrigger();
         }
+    }
+
+    private void Attack()
+    {
+        flashlightSound.Play(); // Play Attack Sound.
+        playerMovement.canMove = false; // Stop player movement.
+        hasFired = true;
+
+        light2D.pointLightOuterRadius = originalOuterRadius * skillRadiusMultiplier; // Sets the new radius.
+        flashlightBattery.intensityModifier = attackIntensity; // Sets new light intensity.
+        flashlightBattery.ModifyBattery(-1); // Reduces battery energy.
+
+        attackCooldown = Time.time + skillDuration; // Creates cooldown timer.
+        attackCollider.enabled = true; // Activate collider for scaring enemies.
+    }
+
+    private void ResetAttack()
+    {
+        playerMovement.canMove = true; // Resume player movement.
+        hasFired = false; // Reset fired trigger.
+        attackCollider.enabled = false; // Disables attack collider.
+
+        //flashlightBattery.intensityModifier = 1; // Resets light intensity to 1.
+        //light2D.pointLightOuterRadius = originalOuterRadius; // Resets outer radius.
+        //Mathf.Lerp(light2D.pointLightOuterRadius, originalRadius, Time.deltaTime * _lerpSpeed)
+    }
+
+    private void UpdateLerp()
+    {
+        flashlightBattery.intensityModifier = Mathf.Lerp(flashlightBattery.intensityModifier, 1, Time.deltaTime * _lerpSpeed); // Resets light intensity to 1.
+        light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, originalOuterRadius, Time.deltaTime * _lerpSpeed); // Resets outer radius.
     }
 }

@@ -49,9 +49,6 @@ public class FlashlightBattery : MonoBehaviour
                     ModifyBattery(-Time.deltaTime * decreaseBatteryModifier);
                 }
 
-
-
-
                 batteryImage.fillAmount = batteryPercentaje;
             }
         }

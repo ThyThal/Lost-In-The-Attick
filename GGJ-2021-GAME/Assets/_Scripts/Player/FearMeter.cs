@@ -10,10 +10,13 @@ public class FearMeter : MonoBehaviour
     [SerializeField] private Image _fearMask;
     [SerializeField] private Color _color;
 
-    [SerializeField]private float fearAmount = 0f;
-    [SerializeField]private int nearEnemys = 0;
+    [SerializeField] private float fearAmount = 0f;
+    [SerializeField] private int nearEnemys = 0;
+    [SerializeField] private float darknessFear = 1.5f;
+
 
     [SerializeField] private AudioClip fearClip;
+    [SerializeField] private FlashlightBattery flashlightBattery;
     private AudioSource audioSrc;
 
     private void Start()
@@ -35,13 +38,16 @@ public class FearMeter : MonoBehaviour
             if (nearEnemys > 0)
             {
                 fearAmount += nearEnemys * fearIncreaseModifier * Time.deltaTime;
-                GetCurrentFill();
+            }
+
+            if (flashlightBattery.currentBattery <= 0)
+            {
+                fearAmount += darknessFear * fearIncreaseModifier * Time.deltaTime;
             }
 
             else if (nearEnemys == 0 && fearAmount > 0)
             {
                 fearAmount -= fearDecreaseModifier * Time.deltaTime;
-                GetCurrentFill();
             }
 
             else
@@ -56,6 +62,8 @@ public class FearMeter : MonoBehaviour
 
                 GameManager.Instance.GameOver();
             }
+
+            GetCurrentFill();
         }
     }
 
