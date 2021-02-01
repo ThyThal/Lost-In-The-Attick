@@ -38,21 +38,19 @@ public class FearMeter : MonoBehaviour
             if (nearEnemys > 0)
             {
                 fearAmount += nearEnemys * fearIncreaseModifier * Time.deltaTime;
+                GetCurrentFill();
             }
 
             if (flashlightBattery.currentBattery <= 0)
             {
                 fearAmount += darknessFear * fearIncreaseModifier * Time.deltaTime;
+                GetCurrentFill();
             }
 
             else if (nearEnemys == 0 && fearAmount > 0)
             {
                 fearAmount -= fearDecreaseModifier * Time.deltaTime;
-            }
-
-            else
-            {
-                fearAmount = 0f;
+                GetCurrentFill();
             }
 
             if (fearAmount >= maxFear)
@@ -63,7 +61,7 @@ public class FearMeter : MonoBehaviour
                 GameManager.Instance.GameOver();
             }
 
-            GetCurrentFill();
+            
         }
     }
 

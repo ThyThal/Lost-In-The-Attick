@@ -26,8 +26,8 @@ public class FlavorFullOldMan : MonoBehaviour
     [SerializeField] private string item2Dialogue;
     [SerializeField] private string item3Dialogue;
     [SerializeField] private string item4Dialogue;
-   
-  
+
+    [SerializeField] private Animator animator;
 
 
 
@@ -96,7 +96,12 @@ public class FlavorFullOldMan : MonoBehaviour
 
         yield return new WaitForSeconds(2);
 
-        dialogueGameObject.SetActive(false);
+        animator.SetTrigger("Disable");
 
+    }
+
+    public void Deactivate()
+    {
+        dialogueGameObject.SetActive(false);
     }
 }
