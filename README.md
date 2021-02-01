@@ -1,2 +1,2 @@
-# GGJ-2021-UADE
-Global Game Jam 2021 - ( Lost &amp; Found )
+# Lost In The Attick
+Global Game Jam 2021 UADE - ( Lost & Found )
