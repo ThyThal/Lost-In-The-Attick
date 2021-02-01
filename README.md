@@ -13,5 +13,5 @@
 
 * []() [Unity Engine](https://unity.com/)
 * []() [Procreate](https://procreate.art/)
-* []() [Procreate](https://www.aseprite.org/)
+* []() [Aseprite](https://www.aseprite.org/)
 * []() [Ableton Live 10](https://www.ableton.com/)
