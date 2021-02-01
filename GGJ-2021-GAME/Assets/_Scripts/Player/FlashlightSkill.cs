@@ -3,9 +3,10 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class FlashlightSkill : MonoBehaviour
 {
+    [SerializeField] private int attackCost = 1;
     [SerializeField] private float skillDuration = 0f;
     [SerializeField] private float skillRadiusMultiplier = 1f;
-    [SerializeField] private float _lerpSpeed = 10f;
+    [SerializeField] private float _lerpSpeed = 3f;
     private FlashlightBattery flashlightBattery;
 
     private Light2D light2D = null;
@@ -70,7 +71,7 @@ public class FlashlightSkill : MonoBehaviour
 
         light2D.pointLightOuterRadius = originalOuterRadius * skillRadiusMultiplier; // Sets the new radius.
         flashlightBattery.intensityModifier = attackIntensity; // Sets new light intensity.
-        flashlightBattery.ModifyBattery(-1); // Reduces battery energy.
+        flashlightBattery.ModifyBattery(-attackCost); // Reduces battery energy.
 
         attackCooldown = Time.time + skillDuration; // Creates cooldown timer.
         attackCollider.enabled = true; // Activate collider for scaring enemies.
