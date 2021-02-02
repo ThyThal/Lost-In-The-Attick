@@ -48,10 +48,13 @@ TagManager:
   - name: Background
     uniqueID: 2020865231
     locked: 0
+  - name: Walls-Obstacles
+    uniqueID: 2007551973
+    locked: 0
   - name: Walls
     uniqueID: 4088047017
     locked: 0
-  - name: Obstacles
+  - name: Obstacles-Walls
     uniqueID: 1043185781
     locked: 0
   - name: Player

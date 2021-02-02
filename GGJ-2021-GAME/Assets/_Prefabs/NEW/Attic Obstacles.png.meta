@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 4271e8f52b23c2e4086f7d2926e4f1b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6546937866786133870
+    second: Attic Obstacles_0
+  - first:
+      213: -8485350623900609286
+    second: Attic Obstacles_1
+  - first:
+      213: -918712606923565667
+    second: Attic Obstacles_2
+  - first:
+      213: -6676070437223031221
+    second: Attic Obstacles_3
+  - first:
+      213: 6004187124780840609
+    second: Attic Obstacles_4
+  - first:
+      213: -8156751105877018055
+    second: Attic Obstacles_5
+  - first:
+      213: -6463721084132497115
+    second: Attic Obstacles_6
+  - first:
+      213: 208141938717385075
+    second: Attic Obstacles_7
+  - first:
+      213: -1769784305224727261
+    second: Attic Obstacles_8
+  - first:
+      213: -7952234862304932337
+    second: Attic Obstacles_9
+  - first:
+      213: 2140856743917407177
+    second: Attic Obstacles_10
+  - first:
+      213: 3583308607128523853
+    second: Attic Obstacles_11
+  - first:
+      213: 3606927344726691496
+    second: Attic Obstacles_12
+  - first:
+      213: 5812664263565798194
+    second: Attic Obstacles_13
+  - first:
+      213: -4966521968618814729
+    second: Attic Obstacles_14
+  - first:
+      213: -2015569064981496020
+    second: Attic Obstacles_15
+  - first:
+      213: 5436241359686446874
+    second: Attic Obstacles_16
+  - first:
+      213: -1758088366620082510
+    second: Attic Obstacles_17
+  - first:
+      213: 564813424333739835
+    second: Attic Obstacles_18
+  - first:
+      213: 1251889182435865319
+    second: Attic Obstacles_19
+  - first:
+      213: -927493424428531127
+    second: Attic Obstacles_20
+  - first:
+      213: 7669601719991242443
+    second: Attic Obstacles_21
+  - first:
+      213: -2378687816396930438
+    second: Attic Obstacles_22
+  - first:
+      213: 7019421563855365301
+    second: Attic Obstacles_23
+  - first:
+      213: -902439573789825228
+    second: Attic Obstacles_24
+  - first:
+      213: 2390991037615844049
+    second: Attic Obstacles_25
+  - first:
+      213: 2348547857259499486
+    second: Attic Obstacles_26
+  - first:
+      213: 643910942526148890
+    second: Attic Obstacles_27
+  - first:
+      213: 37656883220912854
+    second: Attic Obstacles_28
+  - first:
+      213: -3803517795516560626
+    second: Attic Obstacles_29
+  - first:
+      213: -1666739328462345722
+    second: Attic Obstacles_30
+  - first:
+      213: 4299189031132436636
+    second: Attic Obstacles_31
+  - first:
+      213: 2400012252417129616
+    second: Attic Obstacles_32
+  - first:
+      213: 5587363151506317974
+    second: Attic Obstacles_33
+  - first:
+      213: 6559020752963909232
+    second: Attic Obstacles_34
+  - first:
+      213: 3932417691291240168
+    second: Attic Obstacles_35
+  - first:
+      213: -4733330492994095038
+    second: Attic Obstacles_36
+  - first:
+      213: -2010351139343935176
+    second: Attic Obstacles_37
+  - first:
+      213: -228682062718804531
+    second: Attic Obstacles_38
+  - first:
+      213: -260072675367753084
+    second: Attic Obstacles_39
+  - first:
+      213: 8692215757149641090
+    second: Attic Obstacles_40
+  - first:
+      213: -2285765738509655219
+    second: Attic Obstacles_41
+  - first:
+      213: -2419820654583145265
+    second: Attic Obstacles_42
+  - first:
+      213: 5690781002713302906
+    second: Attic Obstacles_43
+  - first:
+      213: -6429837414923887679
+    second: Attic Obstacles_44
+  - first:
+      213: 6503532461019730075
+    second: Attic Obstacles_45
+  - first:
+      213: 9164554651538009998
+    second: Attic Obstacles_46
+  - first:
+      213: -8134137870859886709
+    second: Attic Obstacles_47
+  - first:
+      213: -2765354645048777592
+    second: Attic Obstacles_48
+  - first:
+      213: 67472235074881388
+    second: Attic Obstacles_49
+  - first:
+      213: -514380245337175991
+    second: Attic Obstacles_50
+  - first:
+      213: 7376054192120065520
+    second: Attic Obstacles_51
+  - first:
+      213: -4668713686422366503
+    second: Attic Obstacles_52
+  - first:
+      213: -7376210903445380897
+    second: Attic Obstacles_53
+  - first:
+      213: 1774297010696005513
+    second: Attic Obstacles_54
+  - first:
+      213: -3001683584192481614
+    second: Attic Obstacles_55
+  - first:
+      213: -7610968339979989570
+    second: Attic Obstacles_56
+  - first:
+      213: -3526302859776011297
+    second: Attic Obstacles_57
+  - first:
+      213: -8285975688188255923
+    second: Attic Obstacles_58
+  - first:
+      213: 4472087211030307962
+    second: Attic Obstacles_59
+  - first:
+      213: 4002091132358356865
+    second: Attic Obstacles_60
+  - first:
+      213: -3536287386533863001
+    second: Attic Obstacles_61
+  - first:
+      213: -4839014383271221495
+    second: Attic Obstacles_62
+  - first:
+      213: -7314883559129802490
+    second: Attic Obstacles_63
+  - first:
+      213: 5409816270432856175
+    second: Attic Obstacles_64
+  - first:
+      213: 5836594720158766502
+    second: Attic Obstacles_65
+  - first:
+      213: 1920466205105415237
+    second: Attic Obstacles_66
+  - first:
+      213: -202645693459216880
+    second: Attic Obstacles_67
+  - first:
+      213: 4123893367230399569
+    second: Attic Obstacles_68
+  - first:
+      213: 1471782091948160629
+    second: Attic Obstacles_69
+  - first:
+      213: -4918373630193411343
+    second: Attic Obstacles_70
+  - first:
+      213: -5438104358819303728
+    second: Attic Obstacles_71
+  - first:
+      213: -1682734520902287832
+    second: Attic Obstacles_72
+  - first:
+      213: 3913122335624871055
+    second: Attic Obstacles_73
+  - first:
+      213: 27393909294404566
+    second: Attic Obstacles_74
+  - first:
+      213: 4543867497243638742
+    second: Attic Obstacles_75
+  - first:
+      213: -6773631500732965277
+    second: Attic Obstacles_76
+  - first:
+      213: -9164218464364721692
+    second: Attic Obstacles_77
+  - first:
+      213: -2816523239652988919
+    second: Attic Obstacles_78
+  - first:
+      213: 3873742047858243513
+    second: Attic Obstacles_79
+  - first:
+      213: 307174326256440036
+    second: Attic Obstacles_0
+  - first:
+      213: -6891851778922702855
+    second: Attic Obstacles_1
+  - first:
+      213: 7066165200097118022
+    second: Attic Obstacles_2
+  - first:
+      213: 1198795034658192063
+    second: Attic Obstacles_3
+  - first:
+      213: -2370298766584805163
+    second: Attic Obstacles_4
+  - first:
+      213: 4665063991815231978
+    second: Attic Obstacles_5
+  - first:
+      213: -4317565068863857480
+    second: Attic Obstacles_6
+  - first:
+      213: -1663855949154083005
+    second: Attic Obstacles_7
+  - first:
+      213: 6378263832826656514
+    second: Attic Obstacles_8
+  - first:
+      213: 4351849682354809146
+    second: Attic Obstacles_9
+  - first:
+      213: 8930383913090542633
+    second: Attic Obstacles_10
+  - first:
+      213: -8752103508751797458
+    second: Attic Obstacles_11
+  - first:
+      213: -7450625227888644637
+    second: Attic Obstacles_12
+  - first:
+      213: -8413363731693635292
+    second: Attic Obstacles_13
+  - first:
+      213: -1536655682046529794
+    second: Attic Obstacles_14
+  - first:
+      213: -333546261108688683
+    second: Attic Obstacles_15
+  - first:
+      213: -721903635718944413
+    second: Attic Obstacles_16
+  - first:
+      213: -326629459480245097
+    second: Attic Obstacles_17
+  - first:
+      213: 6235498028903580316
+    second: Attic Obstacles_18
+  - first:
+      213: -2828590123892299614
+    second: Attic Obstacles_19
+  - first:
+      213: -22345383373432529
+    second: Attic Obstacles_20
+  - first:
+      213: 4301204623411780347
+    second: Attic Obstacles_21
+  - first:
+      213: 3888881605975130053
+    second: Attic Obstacles_22
+  - first:
+      213: -3954053861453664525
+    second: Attic Obstacles_23
+  - first:
+      213: 1717814235628300762
+    second: Attic Obstacles_24
+  - first:
+      213: -5144511897320603672
+    second: Attic Obstacles_25
+  - first:
+      213: -4120516433973700709
+    second: Attic Obstacles_26
+  - first:
+      213: -3229302975664954400
+    second: Attic Obstacles_27
+  - first:
+      213: 5546266514064381345
+    second: Attic Obstacles_28
+  - first:
+      213: 3831005416843701105
+    second: Attic Obstacles_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attic Obstacles_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 208
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e292a81c6d434400800000000000000
+      internalID: 307174326256440036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 208
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f71ba852593b50a0800000000000000
+      internalID: -6891851778922702855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 208
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6470404bfcf001260800000000000000
+      internalID: 7066165200097118022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 208
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbabd478bb9f2a010800000000000000
+      internalID: 1198795034658192063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 208
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d88a2684d10b1fd0800000000000000
+      internalID: -2370298766584805163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 178
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9dc96ebf2adb040800000000000000
+      internalID: 4665063991815231978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 178
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc1cbff17de414c0800000000000000
+      internalID: -4317565068863857480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 178
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f104964dbc8e8e0800000000000000
+      internalID: -1663855949154083005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_8
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 178
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207ba579925248850800000000000000
+      internalID: 6378263832826656514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 130
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39a7a0aa30e46c30800000000000000
+      internalID: 4351849682354809146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 161
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cef9f8ad81feb70800000000000000
+      internalID: 8930383913090542633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 130
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23366bba384a8680800000000000000
+      internalID: -8752103508751797458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_12
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 162
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed222194df0a9890800000000000000
+      internalID: -7450625227888644637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_13
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 162
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429fe3e034abd3b80800000000000000
+      internalID: -8413363731693635292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 160
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efee7897cc3bcaae0800000000000000
+      internalID: -1536655682046529794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8f47651710f5bf0800000000000000
+      internalID: -333546261108688683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 144
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369c8e6d7784bf5f0800000000000000
+      internalID: -721903635718944413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_17
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 145
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c8086bc34977bf0800000000000000
+      internalID: -326629459480245097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_18
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 128
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9242729b60f88650800000000000000
+      internalID: 6235498028903580316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 129
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8a832d444deb8d0800000000000000
+      internalID: -2828590123892299614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 129
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2918a10efc90bff0800000000000000
+      internalID: -22345383373432529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 131
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa1ab4f0d2f0bb30800000000000000
+      internalID: 4301204623411780347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_22
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 129
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfb2b9673518f530800000000000000
+      internalID: 3888881605975130053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 128
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3feea4566f06029c0800000000000000
+      internalID: -3954053861453664525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_24
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 96
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9ebb822f6e6d710800000000000000
+      internalID: 1717814235628300762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef3f69afa50b98b0800000000000000
+      internalID: -5144511897320603672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_26
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9796dd722cf0d6c0800000000000000
+      internalID: -4120516433973700709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_27
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 104
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e06f9d063f23d0800000000000000
+      internalID: -3229302975664954400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_28
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 113
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a59378520c48fc40800000000000000
+      internalID: 5546266514064381345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic Obstacles_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17be09b01277a2530800000000000000
+      internalID: 3831005416843701105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
