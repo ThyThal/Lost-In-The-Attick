@@ -26,9 +26,6 @@ public class FlavorFullOldMan : MonoBehaviour
     [SerializeField] private string item2Dialogue;
     [SerializeField] private string item3Dialogue;
     [SerializeField] private string item4Dialogue;
-   
-  
-
 
 
     private void Start()
@@ -96,10 +93,9 @@ public class FlavorFullOldMan : MonoBehaviour
 
         childAudio.Play();
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
 
         dialogueGameObject.SetActive(false);
-
     }
 
 
