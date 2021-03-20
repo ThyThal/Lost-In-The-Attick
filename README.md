@@ -9,6 +9,8 @@
 2. Extract the files into an empty folder.
 3. Click "Lost In The Attick.exe" and enjoy!
 
+Play the WebGL version at: https://diegogandolfo.itch.io/lost-in-the-attick
+
 ## Built With
 
 * []() [Unity Engine](https://unity.com/)
