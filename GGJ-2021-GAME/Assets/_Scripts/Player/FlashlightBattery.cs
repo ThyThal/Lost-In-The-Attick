@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 using UnityEngine.UI;
 
 public class FlashlightBattery : MonoBehaviour
@@ -26,11 +26,11 @@ public class FlashlightBattery : MonoBehaviour
     public float currentBattery = 0f;    
     private bool flashlightState = true;
 
-    private Light2D light2D = null;
+    private UnityEngine.Rendering.Universal.Light2D light2D = null;
 
     private void Awake()
     {
-        light2D = GetComponentInChildren<Light2D>();
+        light2D = GetComponentInChildren<UnityEngine.Rendering.Universal.Light2D>();
     }
 
     private void Start()

@@ -69,7 +69,7 @@ TextureImporter:
       213: -530534621888527648
     second: Player movement Con linterna Sprite Sheet_21
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -86,9 +86,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -98,8 +101,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -120,10 +123,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -135,6 +143,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -147,6 +156,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -624,9 +647,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Player movement Con linterna Sprite Sheet_0: 558395519432862803
+      Player movement Con linterna Sprite Sheet_1: -7850613881505150059
+      Player movement Con linterna Sprite Sheet_10: 6781070895072761474
+      Player movement Con linterna Sprite Sheet_11: -33282722659524048
+      Player movement Con linterna Sprite Sheet_12: 7004286443491240992
+      Player movement Con linterna Sprite Sheet_13: 3098363550035124278
+      Player movement Con linterna Sprite Sheet_14: -8070217754468869568
+      Player movement Con linterna Sprite Sheet_15: 93810416985721003
+      Player movement Con linterna Sprite Sheet_16: 7929196400335987082
+      Player movement Con linterna Sprite Sheet_17: 6521153532922284751
+      Player movement Con linterna Sprite Sheet_18: -4682273283813550947
+      Player movement Con linterna Sprite Sheet_19: 5205828336182608660
+      Player movement Con linterna Sprite Sheet_2: 1552824032531610638
+      Player movement Con linterna Sprite Sheet_20: -5738058385248836136
+      Player movement Con linterna Sprite Sheet_21: -530534621888527648
+      Player movement Con linterna Sprite Sheet_3: 4453008235550303053
+      Player movement Con linterna Sprite Sheet_4: 2812773612545452916
+      Player movement Con linterna Sprite Sheet_5: -6563723249922616775
+      Player movement Con linterna Sprite Sheet_6: -908665361557983024
+      Player movement Con linterna Sprite Sheet_7: 3926775765476193814
+      Player movement Con linterna Sprite Sheet_8: -4054183974094246895
+      Player movement Con linterna Sprite Sheet_9: -1232172995536778582
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
