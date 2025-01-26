@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class FlashlightSkill : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class FlashlightSkill : MonoBehaviour
     [SerializeField] private float _lerpSpeed = 3f;
     private FlashlightBattery flashlightBattery;
 
-    private UnityEngine.Rendering.Universal.Light2D light2D = null;
+    private Light2D light2D = null;
     private float originalOuterRadius = 0f;
     private float attackCooldown = 0f;
     private bool hasFired = false;
@@ -27,7 +27,7 @@ public class FlashlightSkill : MonoBehaviour
 
     private void Awake()
     {
-        light2D = GetComponentInChildren<UnityEngine.Rendering.Universal.Light2D>();
+        light2D = GetComponentInChildren<Light2D>();
         originalOuterRadius = light2D.pointLightOuterRadius;
 
         attackCollider = GetComponent<PolygonCollider2D>();

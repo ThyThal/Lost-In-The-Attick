@@ -93,7 +93,7 @@ TextureImporter:
       213: -5628415983781075116
     second: Obstacles llenos_29
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,12 +110,9 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,8 +122,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -147,15 +144,10 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -167,7 +159,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -180,20 +171,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -839,39 +816,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Obstacles llenos_0: -224159090271318671
-      Obstacles llenos_1: 1321034292912505339
-      Obstacles llenos_10: 1916581748341441159
-      Obstacles llenos_11: 5119871072738653919
-      Obstacles llenos_12: 1461438162584140090
-      Obstacles llenos_13: 1947014733528051841
-      Obstacles llenos_14: -8541847167979525716
-      Obstacles llenos_15: -3496453961340363925
-      Obstacles llenos_16: 6491218145656387280
-      Obstacles llenos_17: 1322137023728988697
-      Obstacles llenos_18: -4773115912163311002
-      Obstacles llenos_19: -402356947705886541
-      Obstacles llenos_2: -3016909278677411345
-      Obstacles llenos_20: -7874125248065525251
-      Obstacles llenos_21: 8218118511582398442
-      Obstacles llenos_22: 7968270417314498494
-      Obstacles llenos_23: -6729959252787305902
-      Obstacles llenos_24: 93495049001313024
-      Obstacles llenos_25: 4703067107922559456
-      Obstacles llenos_26: 7545992604536394682
-      Obstacles llenos_27: 562346221516600506
-      Obstacles llenos_28: -4177729715191159062
-      Obstacles llenos_29: -5628415983781075116
-      Obstacles llenos_3: 776629544652501914
-      Obstacles llenos_4: -1372803257254474831
-      Obstacles llenos_5: -978929449605588781
-      Obstacles llenos_6: 1120642752052670799
-      Obstacles llenos_7: 7535633859633022509
-      Obstacles llenos_8: 3083670491566737640
-      Obstacles llenos_9: 5403463201342920238
-  mipmapLimitGroupName: 
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
